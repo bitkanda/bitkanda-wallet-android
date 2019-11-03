@@ -9,15 +9,15 @@ This is the Android port of the breadwallet iOS app, which can be found [here](h
 
 ### a completely standalone bitcoin wallet
 
-Unlike many other bitcoin wallets, breadwallet is a real standalone bitcoin client. There is no server to get hacked or go down, so you can always access your money. Using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, breadwallet connects directly to the bitcoin network with the fast performance you need on a mobile device.
+Unlike many other bitcoin wallets, bitkanda wallet is a real standalone bitkanda client. There is no server to get hacked or go down, so you can always access your money. Using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, bitkanda wallet connects directly to the bitkanda network with the fast performance you need on a mobile device.
 
 ### the next step in wallet security
 
-breadwallet is designed to protect you from malware, browser security holes, *even physical theft*. With AES hardware encryption, app sandboxing, and verified boot, breadwallet represents a significant security advance over web and desktop wallets.
+bitkanda wallet is designed to protect you from malware, browser security holes, *even physical theft*. With AES hardware encryption, app sandboxing, and verified boot, breadwallet represents a significant security advance over web and desktop wallets.
 
 ### beautiful simplicity
 
-Simplicity is breadwallet's core design principle. A simple backup phrase is all you need to restore your wallet on another device if yours is ever lost or broken.  Because breadwallet is  [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), your balance and transaction history can be recovered from just your backup phrase.
+Simplicity is bitkanda wallet's core design principle. A simple backup phrase is all you need to restore your wallet on another device if yours is ever lost or broken.  Because breadwallet is  [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), your balance and transaction history can be recovered from just your backup phrase.
 
 ## features
 
