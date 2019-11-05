@@ -1,4 +1,4 @@
-![ƀ](/images/icon.png) bitkanda wallet for Android
+![ƀ](/images/icon.png) Bitkanda wallet for Android
 ----------------------------------
 
 [![Get it on Google Play](/images/icon-google-play.png)](https://play.google.com/store/apps/details?id=com.breadwallet)
