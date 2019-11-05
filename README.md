@@ -3,11 +3,11 @@
 
 [![Get it on Google Play](/images/icon-google-play.png)](https://play.google.com/store/apps/details?id=com.breadwallet)
 
-### bitcoin done right
+### Bitkanda done right
 
-This is the Android port of the breadwallet iOS app, which can be found [here](https://github.com/breadwallet/breadwallet/).
+This is the Android port of the bitkanda wallet iOS app, which can be found [here](https://github.com/breadwallet/breadwallet/).
 
-### a completely standalone bitcoin wallet
+### a completely standalone bitkanda wallet
 
 Unlike many other bitcoin wallets, bitkanda wallet is a real standalone bitkanda client. There is no server to get hacked or go down, so you can always access your money. Using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, bitkanda wallet connects directly to the bitkanda network with the fast performance you need on a mobile device.
 
