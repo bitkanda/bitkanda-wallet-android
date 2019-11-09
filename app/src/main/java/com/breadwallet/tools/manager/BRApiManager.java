@@ -238,6 +238,10 @@ public final class BRApiManager {
             BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
                 @Override
                 public void run() {
+                    if(walletManager==null)
+                    {
+
+                    }
                     walletManager.updateFee(context);
                 }
             });
@@ -327,7 +331,8 @@ public final class BRApiManager {
     @WorkerThread
     private static JSONArray fetchFiatRates(Context app) {
         //Fetch the BTC-Fiat rates
-        String url = APIClient.getBaseURL() + CURRENCY_QUERY_STRING + WalletBitcoinManager.BITCOIN_CURRENCY_CODE;
+        String currentcode= WalletBitcoinManager.BITCOIN_CURRENCY_CODE;
+        String url = APIClient.getBaseURL() + CURRENCY_QUERY_STRING +currentcode;
         String jsonString = urlGET(app, url);
         JSONArray jsonArray = null;
         if (jsonString == null) {

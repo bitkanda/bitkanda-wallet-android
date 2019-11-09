@@ -197,6 +197,7 @@ public class FragmentTxDetails extends DialogFragment {
 
             String iso = isCryptoPreferred ? cryptoIso : fiatIso;
 
+
             boolean received = mTransaction.isReceived();
 
             String amountWhenSent;

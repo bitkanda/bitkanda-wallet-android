@@ -17,6 +17,7 @@ import android.view.Display;
 import android.view.WindowManager;
 
 import com.breadwallet.app.ApplicationLifecycleObserver;
+import com.breadwallet.core.BRCoreKey;
 import com.breadwallet.protocols.messageexchange.InboxPollingHandler;
 import com.breadwallet.tools.manager.BRApiManager;
 import com.breadwallet.tools.util.ServerBundlesHelper;
@@ -97,6 +98,15 @@ public class BreadApp extends Application implements ApplicationLifecycleObserve
     private Handler mServerShutdownHandler = null;
     private Runnable mServerShutdownRunnable = null;
 
+    public boolean test()
+    {
+//        String url="bitcoin:36nvnKZrd4PJuYf2zteJcMzP52r47p7ZSZ";
+//        //bitcoin:36nvnKZrd4PJuYf2zteJcMzP52r47p7ZSZ
+//        if (BRCoreKey.isValidBitcoinBIP38Key(url) || BRCoreKey.isValidBitcoinPrivateKey(url)) {
+//            return true;
+//        }
+        return  false;
+    }
     @Override
     public void onCreate() {
         super.onCreate();
@@ -129,6 +139,7 @@ public class BreadApp extends Application implements ApplicationLifecycleObserve
         // Start our local server as soon as the application instance is created, since we need to
         // display support WebViews during onboarding.
         HTTPServer.getInstance().startServer(this);
+        test();
     }
 
     /**

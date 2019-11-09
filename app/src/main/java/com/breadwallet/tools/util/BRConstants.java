@@ -39,12 +39,12 @@ public final class BRConstants {
     public static final ImmutableList<TokenListMetaData.TokenInfo> DEFAULT_WALLETS = new ImmutableList
             .Builder<TokenListMetaData.TokenInfo>()
             .add(new TokenListMetaData.TokenInfo(WalletBitcoinManager.BITCOIN_CURRENCY_CODE, false, null))
-            .add(new TokenListMetaData.TokenInfo(WalletBchManager.BITCASH_CURRENCY_CODE, false, null))
+         /*   .add(new TokenListMetaData.TokenInfo(WalletBchManager.BITCASH_CURRENCY_CODE, false, null))
             .add(new TokenListMetaData.TokenInfo(WalletEthManager.ETH_CURRENCY_CODE, false, null))
             .add(new TokenListMetaData.TokenInfo(WalletTokenManager.BRD_CURRENCY_CODE, true, WalletTokenManager.BRD_CONTRACT_ADDRESS))
             .add(new TokenListMetaData.TokenInfo(WalletTokenManager.DAI_CURRENCY_CODE, true, WalletTokenManager.DAI_CONTRACT_ADDRESS))
             .add(new TokenListMetaData.TokenInfo(WalletTokenManager.TUSD_CURRENCY_CODE, true, WalletTokenManager.TUSD_CONTRACT_ADDRESS))
-            .build();
+        bitkanda   */ .build();
     /**
      * Boolean values as Strings.
      */
@@ -147,10 +147,10 @@ public final class BRConstants {
      * Social media links and privacy policy URLS
      */
 
-    public static final String URL_PRIVACY_POLICY = "https://brd.com/privacy";
-    public static final String URL_TWITTER = "https://twitter.com/brdhq";
-    public static final String URL_REDDIT = "https://www.reddit.com/r/BRDapp/";
-    public static final String URL_BLOG = "https://brd.com/blog/";
+    public static final String URL_PRIVACY_POLICY = "https://github.com/bitkanda/bitkanda-wallet-android/issues";
+    public static final String URL_TWITTER = "https://github.com/bitkanda/bitkanda-wallet-android/issues";
+    public static final String URL_REDDIT = "https://github.com/bitkanda/bitkanda-wallet-android/issues";
+    public static final String URL_BLOG = "https://github.com/bitkanda/bitkanda-wallet-android/issues";
     public static final String URL_BRD_HOST = "brd.com";
     public static final String WALLET_PAIR_PATH = "wallet-pair";
     public static final String WALLET_LINK_PATH = "link-wallet";

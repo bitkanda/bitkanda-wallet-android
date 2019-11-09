@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <!-- App name -->
-    <string name="About.appName.android">bitkanda</string>
+    <string name="About.appName.android">Bitkanda</string>
     <!-- About screen blog label -->
     <string name="About.blog">Blog</string>
     <!-- About screen footer -->
-    <string name="About.footer">Gemaakt door het globale BRD team. Versie %1$s Bouw %2$s</string>
+    <string name="About.footer">Gemaakt door het Bitkanda. Versie %1$s Bouw %2$s</string>
     <!-- Privay Policy button label -->
     <string name="About.privacy">Privacyverklaring</string>
     <!-- About screen reddit label -->
@@ -411,7 +411,7 @@
     <!-- Node status label -->
     <string name="NodeSelector.statusLabel">Connectiestatus van de node</string>
     <!-- Node Selector view title -->
-    <string name="NodeSelector.title">Bitcoin-nodes</string>
+    <string name="NodeSelector.title">Bitkanda-nodes</string>
     <!-- Onboarding screen 'I'll browse first' button -->
     <string name="Onboarding.browseFirst">Ik kijk eerst even rond</string>
     <!-- Onboarding screen 'Buy some coin' button -->

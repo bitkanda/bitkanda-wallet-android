@@ -443,10 +443,25 @@ public class KVStoreManager {
             int classVersion = json.getInt(CLASS_VERSION); //not using yet
             List<TokenListMetaData.TokenInfo> enabledCurrencies = jsonToMetaData(json.getJSONArray(ENABLED_CURRENCIES));
             List<TokenListMetaData.TokenInfo> hiddenCurrencies = jsonToMetaData(json.getJSONArray(HIDDEN_CURRENCIES));
-            result = new TokenListMetaData(enabledCurrencies, hiddenCurrencies);
+            //bitkanda showcoin
+            //List<TokenListMetaData.TokenInfo> remove = new ArrayList<TokenListMetaData.TokenInfo>();
+            for (TokenListMetaData.TokenInfo tokenInfo:enabledCurrencies ) {
+               // if(!("BTC".equalsIgnoreCase(tokenInfo.symbol)||"BKD".equalsIgnoreCase(tokenInfo.symbol)))
+                if(!"BTC".equalsIgnoreCase(tokenInfo.symbol))
+                {
+                    //remove.add((tokenInfo));
+                    hiddenCurrencies.add((tokenInfo));
+                }
+            }
+            enabledCurrencies.removeAll(hiddenCurrencies);
+            result = new TokenListMetaData(enabledCurrencies, null);
+            //bitkanda end
+            //result = new TokenListMetaData(enabledCurrencies, hiddenCurrencies);
+
         } catch (JSONException e) {
             Log.e(TAG, "getTokenListMetaData: ", e);
         }
+
 
         return result;
     }

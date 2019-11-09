@@ -21,8 +21,9 @@
             android:layout_height="14dp"
             android:layout_centerInParent="true"
             android:layout_marginTop="10dp"
-            android:background="@drawable/brd_logo_white_svg" />
-
+            android:visibility="gone"
+            />
+      <!--android:background="@drawable/brd_logo_white_svg" -->
         <ImageButton
             android:id="@+id/help_icon"
             android:layout_width="wrap_content"

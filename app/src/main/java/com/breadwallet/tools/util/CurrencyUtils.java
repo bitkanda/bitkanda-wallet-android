@@ -78,7 +78,10 @@ public class CurrencyUtils {
             currencyFormat.setDecimalFormatSymbols(decimalFormatSymbols);
             currencyFormat.setMaximumFractionDigits(maxDecimalPlacesForCrypto == -1 ? wallet.getMaxDecimalPlaces(app) : maxDecimalPlacesForCrypto);
             currencyFormat.setMinimumFractionDigits(0);
-            return displayCurrencyCode ? String.format("%s %s", currencyFormat.format(amount), currencyCode.toUpperCase()) : currencyFormat.format(amount) ;
+            String code=currencyCode.toUpperCase();
+            if(code=="BTC")
+                code="BKD";//bitkanda
+            return displayCurrencyCode ? String.format("%s %s", currencyFormat.format(amount), code) : currencyFormat.format(amount) ;
         } else {
             try {
                 Currency currency = Currency.getInstance(currencyCode);

@@ -82,7 +82,7 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
     private static final int SYNC_MAX_RETRY = 1;
     private static final int SYNC_RETRY_DELAY_SECONDS = 3;
 
-    public static final String BITCOIN_CURRENCY_CODE = "BTC";
+    public static final String BITCOIN_CURRENCY_CODE = "BTC";//"BTC";
     public static final String BITCASH_CURRENCY_CODE = "BCH";
 
     private WalletSettingsConfiguration mSettingsConfig;

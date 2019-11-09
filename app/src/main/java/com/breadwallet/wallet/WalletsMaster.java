@@ -87,12 +87,12 @@ public class WalletsMaster implements WalletEthManager.OnTokenLoadedListener {
 
     //expensive operation (uses the KVStore), only update when needed and not in a loop.
     public synchronized void updateWallets(Context app) {
-        WalletEthManager ethWallet = WalletEthManager.getInstance(app.getApplicationContext());
-        if (ethWallet == null) {
-            return; //return empty wallet list if ETH is null (meaning no public key yet)
-        }
-        ethWallet.addTokenLoadedListener(this);
-
+//        WalletEthManager ethWallet = WalletEthManager.getInstance(app.getApplicationContext());
+//        if (ethWallet == null) {
+//            return; //return empty wallet list if ETH is null (meaning no public key yet)
+//        }
+//        ethWallet.addTokenLoadedListener(this);
+//bitkanda
         mWallets.clear();
         mTokenListMetaData = KVStoreManager.getTokenListMetaData(app);
         if (mTokenListMetaData == null) {
@@ -105,30 +105,43 @@ public class WalletsMaster implements WalletEthManager.OnTokenLoadedListener {
             if (!mTokenListMetaData.isCurrencyHidden(enabled.symbol)) {
                 if (enabled.symbol.equalsIgnoreCase(BaseBitcoinWalletManager.BITCOIN_CURRENCY_CODE)) {
                     //BTC wallet
-                    mWallets.add(WalletBitcoinManager.getInstance(app));
+                    WalletBitcoinManager bitcoinManager=WalletBitcoinManager.getInstance(app);
+                    if(bitcoinManager!=null) {
+                        mWallets.add(bitcoinManager);
+                    }
+                    else
+                    {
+
+                    }
+
                 } else if (enabled.symbol.equalsIgnoreCase(BaseBitcoinWalletManager.BITCASH_CURRENCY_CODE)) {
                     //BCH wallet
                     mWallets.add(WalletBchManager.getInstance(app));
-                } else if (enabled.symbol.equalsIgnoreCase(WalletEthManager.ETH_CURRENCY_CODE)) {
-                    //ETH wallet
-                    mWallets.add(ethWallet);
-                } else {
-                    //add ERC20 wallet
-                    WalletTokenManager tokenWallet = WalletTokenManager.getTokenWalletByIso(app, enabled.symbol);
-                    if (tokenWallet == null) {
-                        Log.d(TAG, "Storing unloaded token(" + enabled.symbol + ").");
-                        mUnloadedTokenSymbols.add(enabled.symbol);
-                    } else {
-                        mWallets.add(tokenWallet);
-                    }
                 }
+                else
+                {
+                    Log.d(TAG, "Storing unloaded token(" + enabled.symbol + ").");
+                }
+//                else if (enabled.symbol.equalsIgnoreCase(WalletEthManager.ETH_CURRENCY_CODE)) {
+//                    //ETH wallet
+//                    //mWallets.add(ethWallet);
+//                } else {
+//                    //add ERC20 wallet
+//                    WalletTokenManager tokenWallet = WalletTokenManager.getTokenWalletByIso(app, enabled.symbol);
+//                    if (tokenWallet == null) {
+//                        Log.d(TAG, "Storing unloaded token(" + enabled.symbol + ").");
+//                        mUnloadedTokenSymbols.add(enabled.symbol);
+//                    } else {
+//                        mWallets.add(tokenWallet);
+//                    }
+//                }
             }
 
         }
 
-        if (mUnloadedTokenSymbols.isEmpty()) {
-            ethWallet.removeTokenLoadedListener(this);
-        }
+//        if (mUnloadedTokenSymbols.isEmpty()) {
+//            ethWallet.removeTokenLoadedListener(this);
+//        }
     }
 
     public synchronized List<BaseWalletManager> getAllWallets(Context context) {

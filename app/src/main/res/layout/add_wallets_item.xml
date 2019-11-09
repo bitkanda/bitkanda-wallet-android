@@ -6,8 +6,9 @@
     android:layout_marginBottom="8dp"
     android:background="@drawable/add_wallet_item_background"
     android:paddingTop="8dp"
+    android:visibility="gone"
     android:paddingBottom="8dp">
-
+    <!--bitkanda-->
     <com.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/add_wallets"
         android:layout_width="wrap_content"

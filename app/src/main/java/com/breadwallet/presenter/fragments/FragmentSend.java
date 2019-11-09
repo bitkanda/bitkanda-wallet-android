@@ -681,7 +681,10 @@ public class FragmentSend extends ModalDialogFragment implements BRKeyboard.OnIn
         if (!mIsAmountLabelShown) {
             mCurrencyCode.setText(CurrencyUtils.getSymbolByIso(context, mSelectedCurrencyCode));
         }
-        mCurrencyCodeButton.setText(mSelectedCurrencyCode);
+        String code=mSelectedCurrencyCode;
+//        if(code=="BTC")
+//            code="BKD";//bitkanda
+        mCurrencyCodeButton.setText(code);
 
         //is the chosen ISO a crypto (could be also a fiat currency)
         boolean isIsoCrypto = WalletsMaster.getInstance().isIsoCrypto(context, mSelectedCurrencyCode);

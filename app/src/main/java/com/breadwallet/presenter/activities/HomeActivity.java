@@ -115,13 +115,14 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         eventAttributes.put(EventUtils.EVENT_ATTRIBUTE_SHOW, Boolean.toString(showBuyAndSell));
         EventUtils.pushEvent(EventUtils.EVENT_EXPERIMENT_BUY_SELL_MENU_BUTTON, eventAttributes);
         mBuyLayout.setOnClickListener(view -> {
-            Map<String, String> clickAttributes = new HashMap<>();
-            eventAttributes.put(EventUtils.EVENT_ATTRIBUTE_BUY_AND_SELL, Boolean.toString(showBuyAndSell));
-            EventUtils.pushEvent(EventUtils.EVENT_HOME_DID_TAP_BUY, clickAttributes);
-            String url = String.format(BRConstants.CURRENCY_PARAMETER_STRING_FORMAT,
-                    HTTPServer.getPlatformUrl(HTTPServer.URL_BUY),
-                    WalletBitcoinManager.getInstance(HomeActivity.this).getCurrencyCode());
-            UiUtils.startPlatformBrowser(HomeActivity.this, url);
+            //bitkanda
+//            Map<String, String> clickAttributes = new HashMap<>();
+//            eventAttributes.put(EventUtils.EVENT_ATTRIBUTE_BUY_AND_SELL, Boolean.toString(showBuyAndSell));
+//            EventUtils.pushEvent(EventUtils.EVENT_HOME_DID_TAP_BUY, clickAttributes);
+//            String url = String.format(BRConstants.CURRENCY_PARAMETER_STRING_FORMAT,
+//                    HTTPServer.getPlatformUrl(HTTPServer.URL_BUY),
+//                    WalletBitcoinManager.getInstance(HomeActivity.this).getCurrencyCode());
+//            UiUtils.startPlatformBrowser(HomeActivity.this, url);
         });
         mTradeLayout.setOnClickListener(view -> UiUtils.startPlatformBrowser(HomeActivity.this, HTTPServer.getPlatformUrl(HTTPServer.URL_TRADE)));
         mMenuLayout.setOnClickListener(view -> {

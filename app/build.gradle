@@ -60,7 +60,7 @@ android {
         brd {
             applicationId = "com.breadwallet"
             dimension "mode"
-            resValue "string", "app_name", "bitkanda"
+            resValue "string", "app_name", "Bitkanda"
             buildConfigField "boolean", "BITCOIN_TESTNET", "false"
             signingConfig signingConfigs.FakeSigningConfig // Uncomment to fake sign a mainnet release build for testing.
             missingDimensionStrategy 'network', 'onMainnet'
@@ -68,7 +68,7 @@ android {
         brdTestnet {
             applicationId = "com.breadwallet.testnet"
             dimension "mode"
-            resValue "string", "app_name", "bitkanda Testnet"
+            resValue "string", "app_name", "Bitkanda Testnet"
             buildConfigField "boolean", "BITCOIN_TESTNET", "true"
             signingConfig signingConfigs.FakeSigningConfig
             missingDimensionStrategy 'network', 'onTestnet'

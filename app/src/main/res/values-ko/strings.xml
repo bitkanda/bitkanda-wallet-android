@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <!-- App name -->
-    <string name="About.appName.android">bitkanda</string>
+    <string name="About.appName.android">Bitkanda</string>
     <!-- About screen blog label -->
     <string name="About.blog">블로그</string>
     <!-- About screen footer -->
-    <string name="About.footer">글로벌 BRD 팀 제작. 버전 %1$s 빌드 %2$s</string>
+    <string name="About.footer">글로벌 Bitkanda 팀 제작. 버전 %1$s 빌드 %2$s</string>
     <!-- Privay Policy button label -->
     <string name="About.privacy">개인정보 보호정책</string>
     <!-- About screen reddit label -->

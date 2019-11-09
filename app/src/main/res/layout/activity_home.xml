@@ -179,6 +179,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="bottom"
                     android:gravity="bottom"
+                  android:visibility="invisible"
                     android:orientation="vertical"
                     android:paddingBottom="4dp">
 
@@ -188,6 +189,7 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
                         android:src="@drawable/ic_menu_trade"
+
                         android:tint="@color/white" />
 
                     <com.breadwallet.presenter.customviews.BaseTextView
@@ -195,6 +197,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="bottom"
+
                         android:text="@string/HomeScreen.trade"
                         android:textColor="@color/white" />
                 </LinearLayout>

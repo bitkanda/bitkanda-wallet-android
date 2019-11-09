@@ -123,6 +123,8 @@ public class CryptoUriParser {
         if (Utils.isNullOrEmpty(url)) {
             return false;
         }
+        url="bitkanda:36nvnKZrd4PJuYf2zteJcMzP52r47p7ZSZ";
+        //bitcoin:36nvnKZrd4PJuYf2zteJcMzP52r47p7ZSZ
         if (BRCoreKey.isValidBitcoinBIP38Key(url) || BRCoreKey.isValidBitcoinPrivateKey(url)) {
             return true;
         }
@@ -162,6 +164,7 @@ public class CryptoUriParser {
         }
         String scheme = uri.getScheme() == null ? "" : uri.getScheme();
         uri = Uri.parse(scheme + "://" + schemeSpecific);
+
         BaseWalletManager currentWallet = WalletsMaster.getInstance().getCurrentWallet(context);
 
         cryptoBuilder = sanitizeData(context, currentWallet, uri, cryptoBuilder);
@@ -239,7 +242,8 @@ public class CryptoUriParser {
             builder = builder.setScheme(uri.getScheme());
             List<BaseWalletManager> list = new ArrayList<>(WalletsMaster.getInstance().getAllWallets(context));
             for (BaseWalletManager walletManager : list) {
-                if (uri.getScheme().equalsIgnoreCase(walletManager.getScheme())) {
+               String scheme=uri.getScheme();
+                if (scheme.equalsIgnoreCase(walletManager.getScheme())) {
                     builder.setCurrencyCode(walletManager.getCurrencyCode());
                     break;
                 }

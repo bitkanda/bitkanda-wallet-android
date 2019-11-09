@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <!-- App name -->
-    <string name="About.appName.android">bitkanda</string>
+    <string name="About.appName.android">Bitkanda</string>
     <!-- About screen blog label -->
     <string name="About.blog">部落格</string>
     <!-- About screen footer -->
-    <string name="About.footer">由全球 BRD 團隊製作。版本 %1$s構建%2$s</string>
+    <string name="About.footer">由Bitkanda 製作。版本 %1$s構建%2$s</string>
     <!-- Privay Policy button label -->
     <string name="About.privacy">隱私政策</string>
     <!-- About screen reddit label -->
@@ -17,7 +17,7 @@
     <!-- About screen twitter label -->
     <string name="About.twitter">Twitter</string>
     <!-- About screen wallet ID label -->
-    <string name="About.walletID">BRD 獎勵 ID</string>
+    <string name="About.walletID">BitkandaWallet 獎勵 ID</string>
     <!-- Close modal button accessibility label -->
     <string name="AccessibilityLabels.close">關閉</string>
     <!-- Support center accessibiliy label -->
@@ -31,7 +31,7 @@
     <!-- Loading Wallet Message -->
     <string name="Account.loadingMessage">正在載入電子錢包</string>
     <!-- Default wallet name -->
-    <string name="AccountHeader.defaultWalletName">我的 BRD</string>
+    <string name="AccountHeader.defaultWalletName">我的 BitkandaWallet</string>
     <!-- Third party keyboard warning -->
     <string name="Alert.customKeyboard.android">您似乎在使用第三方鍵盤，這可能會記錄您按下的鍵並竊取您的「紙鑰」。請切換至預設的 Android 鍵盤以獲得額外的保護。</string>
     <!-- Error alert title -->
@@ -39,11 +39,11 @@
     <!-- Keystore error -->
     <string name="Alert.keystore.generic.android">您的 Android OS 金鑰儲存區有問題，請聯絡 support@breadwallet.com</string>
     <!-- KeyStore error, keys are invalidated -->
-    <string name="Alert.keystore.invalidated.android">您的 BRD 加密資料最近已被判定為無效，因爲您的 Android 螢幕鎖定已被停用。</string>
+    <string name="Alert.keystore.invalidated.android">您的 BitkandaWallet 加密資料最近已被判定為無效，因爲您的 Android 螢幕鎖定已被停用。</string>
     <!-- Warn user key store data has been invalidate because the user changed their security settings. The user must uninstall. -->
-    <string name="Alert.keystore.invalidated.uninstall.android">無法繼續執行動作，因為您的螢幕鎖定設置有變動（例如，密碼關閉、指紋變動）。基於安全考量，Android 已永久關鎖您的密鑰庫。因此，必須透過解除安裝來消除您的 BRD 應用程式資料。\n\n別擔心，您的資金仍然安全！ 重新安裝應用程式，並使用紙密鑰來復原您的錢包。</string>
+    <string name="Alert.keystore.invalidated.uninstall.android">無法繼續執行動作，因為您的螢幕鎖定設置有變動（例如，密碼關閉、指紋變動）。基於安全考量，Android 已永久關鎖您的密鑰庫。因此，必須透過解除安裝來消除您的 BitkandaWallet 應用程式資料。\n\n別擔心，您的資金仍然安全！ 重新安裝應用程式，並使用紙密鑰來復原您的錢包。</string>
     <!-- Warn user key store data has been invalidate because the user changed their security settings. The user must wipe their app data. -->
-    <string name="Alert.keystore.invalidated.wipe.android">無法繼續執行動作，因為您的螢幕鎖定設置有變動（例如，密碼關閉、指紋變動）。基於安全考量，Android 已永久關鎖您的密鑰庫。因此，您的 BRD 應用程式資料必須消除。\n\n別擔心，您的資金仍然安全！使用紙密鑰來復原您的錢包。</string>
+    <string name="Alert.keystore.invalidated.wipe.android">無法繼續執行動作，因為您的螢幕鎖定設置有變動（例如，密碼關閉、指紋變動）。基於安全考量，Android 已永久關鎖您的密鑰庫。因此，您的 BitkandaWallet 應用程式資料必須消除。\n\n別擔心，您的資金仍然安全！使用紙密鑰來復原您的錢包。</string>
     <!-- Keystore error title -->
     <string name="Alert.keystore.title.android">Android 金鑰儲存區錯誤</string>
     <!-- No internet alert message -->
@@ -73,11 +73,11 @@
     <!-- Fingerprint was recognized by the scanner -->
     <string name="Alerts.touchIdSucceeded.android">已辨識指紋</string>
     <!-- Tell the user where they can enable permissions to access device storage. -->
-    <string name="Android.allowFileSystemAccess">請在您的裝置啟用儲存權限：[設定] &gt; [應用程式] &gt; [BRD] &gt; [權限]。</string>
+    <string name="Android.allowFileSystemAccess">請在您的裝置啟用儲存權限：[設定] &gt; [應用程式] &gt; [Bitkanda] &gt; [權限]。</string>
     <!-- The "home" screen is the name of the top level menu for the app. -->
     <string name="Android.BCH.welcome.message">任何在您錢包裡的 BCH 都可透過主畫面存取。</string>
     <!-- Warning about using apps that can alter the screen -->
-    <string name="Android.screenAlteringMessage">除非停用螢幕改變應用程式（例如 Twilight），否則 BRD 無法正常運作。</string>
+    <string name="Android.screenAlteringMessage">除非停用螢幕改變應用程式（例如 Twilight），否則 Bitkanda 無法正常運作。</string>
     <!-- An app that alters the screen ("screen-altering app") has been detected. -->
     <string name="Android.screenAlteringTitle">偵測到螢幕改變應用程式</string>
     <!-- JSON Serialization error message -->
@@ -109,7 +109,7 @@
     <!-- Approve button label -->
     <string name="BitID.approve">許可</string>
     <!-- <sitename> is requesting authentication using your bitcoin wallet -->
-    <string name="BitID.authenticationRequest">%1$s 要求認證使用您的比特幣錢包</string>
+    <string name="BitID.authenticationRequest">%1$s 要求認證使用您的Bitkanda錢包</string>
     <!-- Deny button label -->
     <string name="BitID.deny">拒絕</string>
     <!-- BitID error alert title -->
@@ -207,7 +207,7 @@
     <!-- Retry Identity verification button -->
     <string name="Crowdsale.retry">重試</string>
     <!-- Bitcoin denomination picker label -->
-    <string name="DefaultCurrency.bitcoinLabel">比特幣顯示單位</string>
+    <string name="DefaultCurrency.bitcoinLabel">Bitkanda顯示單位</string>
     <!-- Exchange rate label -->
     <string name="DefaultCurrency.rateLabel">匯率</string>
     <!-- The wallet is disabled. -->
@@ -225,7 +225,7 @@
     <!-- Email unavailable alert title -->
     <string name="ErrorMessages.emailUnavailableTitle">無法使用電子郵件</string>
     <!-- Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) -->
-    <string name="ErrorMessages.loopingLockScreen.android">由於您安卓系統版本中的錯誤，因此 BRD 無法取得認證。[請點擊此瞭解更多資訊。]</string>
+    <string name="ErrorMessages.loopingLockScreen.android">由於您安卓系統版本中的錯誤，因此 BitkandaWallet 無法取得認證。[請點擊此瞭解更多資訊。]</string>
     <!-- Messaging unavailable alert title -->
     <string name="ErrorMessages.messagingUnavailableMessage">本裝置並非設定來傳送訊息。</string>
     <!-- Messaging unavailable alert title -->
@@ -235,11 +235,11 @@
     <!-- You can customize your Face ID Spending Limit from the [menu] -->
     <string name="FaceIDSettings.customizeText">您可由 %1$s 自訂 Face ID 消費上限。</string>
     <!-- Face Id screen label -->
-    <string name="FaceIDSettings.label">刷臉解鎖您的 BRD 並在設定的限制內撥款。</string>
+    <string name="FaceIDSettings.label">刷臉解鎖您的 BitkandaWallet 並在設定的限制內撥款。</string>
     <!-- Title of the screen for setting the Face ID Spending Limit -->
     <string name="FaceIDSettings.linkText">Face ID 消費上限畫面</string>
-    <!-- Setting to turn on Face ID for BRD -->
-    <string name="FaceIDSettings.switchLabel">開放 BRD 使用 Face ID</string>
+    <!-- Setting to turn on Face ID for BitkandaWallet -->
+    <string name="FaceIDSettings.switchLabel">開放 BitkandaWallet 使用 Face ID</string>
     <!-- Face ID settings view title -->
     <string name="FaceIDSettings.title">Face ID</string>
     <!-- Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. -->
@@ -287,7 +287,7 @@
     <!-- Checking private key balance progress view text -->
     <string name="Import.checking">正在檢查私密金鑰餘額…</string>
     <!-- Sweep private key confirmation message -->
-    <string name="Import.confirm">要從這個私密金鑰寄出 %1$s 到您的電子錢包嗎？比特幣網路會收到 %2$s 的費用。</string>
+    <string name="Import.confirm">要從這個私密金鑰寄出 %1$s 到您的電子錢包嗎？Bitkanda網路會收到 %2$s 的費用。</string>
     <!-- Duplicate key error message -->
     <string name="Import.Error.duplicate">此私密金鑰已經在您的電子錢包了。</string>
     <!-- empty private key error message -->
@@ -305,13 +305,13 @@
     <!-- Caption for graphics -->
     <string name="Import.leftCaption">私密金鑰</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">私密金鑰通常以 QR 碼形式印在紙上，作為離線儲存資金使用。利用單一交易兌換私密金鑰下所控制的所有資金匯入您的 BRD。</string>
+    <string name="Import.message">私密金鑰通常以 QR 碼形式印在紙上，作為離線儲存資金使用。利用單一交易兌換私密金鑰下所控制的所有資金匯入您的 BitkandaWallet。</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">此私密金鑰受密碼保護。</string>
     <!-- password textfield placeholder -->
     <string name="Import.passwordPlaceholder">密碼</string>
     <!-- Caption for graphics -->
-    <string name="Import.rightCaption">您的 BRD 錢包</string>
+    <string name="Import.rightCaption">您的 BitkandaWallet 錢包</string>
     <!-- Scan Private key button label -->
     <string name="Import.scan">掃描私密金鑰</string>
     <!-- Import wallet success alert title -->
@@ -331,9 +331,9 @@
     <!-- Ignore jailbreak warning button -->
     <string name="JailbreakWarnings.ignore">略過</string>
     <!-- Jailbreak warning message -->
-    <string name="JailbreakWarnings.messageWithBalance">裝置安全性遭破解\n 任何「越獄」應用程式都可以存取 BRD 的鑰匙圈資料、 竊取您的比特幣！立即抹除這個錢包，在安全的裝置上還原。</string>
+    <string name="JailbreakWarnings.messageWithBalance">裝置安全性遭破解\n 任何「越獄」應用程式都可以存取 BitkandaWallet 的鑰匙圈資料、 竊取您的Bitkanda！立即抹除這個錢包，在安全的裝置上還原。</string>
     <!-- Jailbreak warning message -->
-    <string name="JailbreakWarnings.messageWithoutBalance">裝置安全性遭破解\n 任何「越獄」應用程式都可以存取 BRD 的鑰匙圈資料、 竊取您的比特幣。請只在未越獄的裝置上使用 BRD。</string>
+    <string name="JailbreakWarnings.messageWithoutBalance">裝置安全性遭破解\n 任何「越獄」應用程式都可以存取 BitkandaWallet 的鑰匙圈資料、 竊取您的Bitkanda。請只在未越獄的裝置上使用 BitkandaWallet。</string>
     <!-- Jailbreak warning title -->
     <string name="JailbreakWarnings.title">警告</string>
     <!-- Wipe wallet button -->
@@ -355,7 +355,7 @@
     <!-- Location services disabled error -->
     <string name="LocationPlugin.disabled">定位服務已停用。</string>
     <!-- No permissions for location services -->
-    <string name="LocationPlugin.notAuthorized">BRD 沒有存取定位服務的權限。</string>
+    <string name="LocationPlugin.notAuthorized">BitkandaWallet 沒有存取定位服務的權限。</string>
     <!-- Wallet creation date prefix -->
     <string name="ManageWallet.creationDatePrefix">您在 %1$s 建立了電子錢包</string>
     <!-- Manage wallet description text -->
@@ -371,7 +371,7 @@
     <!-- (Click here to) manage (your list of) wallets -->
     <string name="MenuButton.manageWallets">管理錢包</string>
     <!-- (press here to) scan (a) QR code -->
-    <string name="MenuButton.scan">掃描 QR</string>
+    <string name="MenuButton.scan">掃描 二維码</string>
     <!-- Menu button title -->
     <string name="MenuButton.security">資訊安全中心</string>
     <!-- Menu button title -->
@@ -411,7 +411,7 @@
     <!-- Node status label -->
     <string name="NodeSelector.statusLabel">節點連線狀態</string>
     <!-- Node Selector view title -->
-    <string name="NodeSelector.title">比特幣節點</string>
+    <string name="NodeSelector.title">比坎达節點</string>
     <!-- Onboarding screen 'I'll browse first' button -->
     <string name="Onboarding.browseFirst">我先瀏覽一下</string>
     <!-- Onboarding screen 'Buy some coin' button -->
@@ -429,13 +429,13 @@
     <!-- Onboarding screen Page 1 title -->
     <string name="OnboardingPageOne.title">歡迎來到您全新的全球錢包！</string>
     <!-- Onboarding screen Page 3 subtitle -->
-    <string name="OnboardingPageThree.subtitle">使用 BRD 進行多元分散投資,既輕鬆又安全。</string>
+    <string name="OnboardingPageThree.subtitle">使用 BitkandaWallet 進行多元分散投資,既輕鬆又安全。</string>
     <!-- Onboarding screen Page 3 title -->
-    <string name="OnboardingPageThree.title">購買及交易比特幣,代幣及其他數位貨幣。</string>
+    <string name="OnboardingPageThree.title">購買及交易Bitkanda,代幣及其他數位貨幣。</string>
     <!-- Onboarding screen Page 2 subtitle -->
     <string name="OnboardingPageTwo.subtitle">我們擁有價值超過 60 億美元受到保護的資產。</string>
     <!-- Onboarding screen Page 2 title -->
-    <string name="OnboardingPageTwo.title">加入全球數百萬信賴 BRD 的人潮。</string>
+    <string name="OnboardingPageTwo.title">加入全球數百萬信賴 BitkandaWallet 的人潮。</string>
     <!-- Eg. Send 1.0Eth to purchase CCC -->
     <string name="PaymentConfirmation.amountText">匯出%1$s來購買%2$s</string>
     <!-- Payment confirmation view title -->
@@ -451,9 +451,9 @@
     <!-- Payment too small alert title -->
     <string name="PaymentProtocol.Errors.smallOutputError">無法進行付款</string>
     <!-- Amount too small error message -->
-    <string name="PaymentProtocol.Errors.smallPayment">比特幣付款不能少於 %1$s。</string>
+    <string name="PaymentProtocol.Errors.smallPayment">Bitkanda付款不能少於 %1$s。</string>
     <!-- Output too small error message. -->
-    <string name="PaymentProtocol.Errors.smallTransaction">比特幣交易輸出不能少於 %1$s。</string>
+    <string name="PaymentProtocol.Errors.smallTransaction">Bitkanda交易輸出不能少於 %1$s。</string>
     <!-- Unsupported signature type payment protocol error message -->
     <string name="PaymentProtocol.Errors.unsupportedSignatureType">不受支援的簽章類型</string>
     <!-- Untrusted certificate payment protocol error message -->
@@ -493,7 +493,7 @@
     <!-- Transaction rejected prompt title -->
     <string name="Prompts.RecommendRescan.title">交易被拒</string>
     <!-- Share data prompt body -->
-    <string name="Prompts.ShareData.body">和我們分享您的匿名資料來協助改善 BRD</string>
+    <string name="Prompts.ShareData.body">和我們分享您的匿名資料來協助改善 BitkandaWallet</string>
     <!-- Share data prompt title -->
     <string name="Prompts.ShareData.title">分享匿名資料</string>
     <!-- Enable touch ID prompt body -->
@@ -507,7 +507,7 @@
     <!-- Button on fingerprint prompt so the user can enter their PIN instead -->
     <string name="Prompts.TouchId.usePin.android">密碼</string>
     <!-- Upgrade PIN prompt body. -->
-    <string name="Prompts.UpgradePin.body">BRD 已經升級至 6 位數 PIN 碼。請點這裡升級。</string>
+    <string name="Prompts.UpgradePin.body">BitkandaWallet 已經升級至 6 位數 PIN 碼。請點這裡升級。</string>
     <!-- Upgrade PIN prompt title. -->
     <string name="Prompts.UpgradePin.title">升級 PIN 碼</string>
     <!-- Body text for the push notifications prompt. -->
@@ -515,11 +515,11 @@
     <!-- Push notifications are disabled alert title" -->
     <string name="PushNotifications.disabled">已停用通知功能</string>
     <!-- Body text when push notifications are disabled. -->
-    <string name="PushNotifications.disabledBody">開通推送消息通知功能，接收 BRD 特別優惠和最新資訊。</string>
+    <string name="PushNotifications.disabledBody">開通推送消息通知功能，接收 BitkandaWallet 特別優惠和最新資訊。</string>
     <!-- Body text when push notifications are enabled. -->
-    <string name="PushNotifications.enabledBody">您將接收 BRD 特別優惠和最新資訊。</string>
-    <!-- Instructions to enable push notifications for BRD in the phone's system settings. -->
-    <string name="PushNotifications.enableInstructions">您好像關閉了推送通知功能。請前往“設置”，開通接收 BRD 推送功能。</string>
+    <string name="PushNotifications.enabledBody">您將接收 BitkandaWallet 特別優惠和最新資訊。</string>
+    <!-- Instructions to enable push notifications for BitkandaWallet in the phone's system settings. -->
+    <string name="PushNotifications.enableInstructions">您好像關閉了推送通知功能。請前往“設置”，開通接收 BitkandaWallet 推送功能。</string>
     <!-- Push notifications toggle switch label -->
     <string name="PushNotifications.label">接收推送</string>
     <!-- Push notifications are off label -->
@@ -533,9 +533,9 @@
     <!-- Google play review prompt, revivew button -->
     <string name="RateAppPrompt.Button.Dismiss.Android">不用了，謝謝</string>
     <!-- Google play review prompt, dismiss button -->
-    <string name="RateAppPrompt.Button.RateApp.Android">評價 BRD</string>
+    <string name="RateAppPrompt.Button.RateApp.Android">評價 BitkandaWallet</string>
     <!-- Google play review prompt title -->
-    <string name="RateAppPrompt.Title.Android">評價 BRD</string>
+    <string name="RateAppPrompt.Title.Android">評價 BitkandaWallet</string>
     <!-- Address copied message. -->
     <string name="Receive.copied">已複製至剪貼簿。</string>
     <!-- Share via email button label -->
@@ -557,7 +557,7 @@
     <!-- Enter paper key instruction -->
     <string name="RecoverWallet.instruction">輸入紙本金鑰</string>
     <!-- Recover wallet intro -->
-    <string name="RecoverWallet.intro">以您的紙本金鑰復原您的 BRD</string>
+    <string name="RecoverWallet.intro">以您的紙本金鑰復原您的 BitkandaWallet</string>
     <!-- Invalid paper key message -->
     <string name="RecoverWallet.invalid">紙本金鑰</string>
     <!-- Previous button accessibility label -->
@@ -616,14 +616,14 @@
     <string name="RecoveryKeyFlow.rememberToWriteDownReminder">請記得寫下這些字詞；如果忘了,請滑動返回。</string>
     <!-- Instruction displayed when the user is resetting the PIN, which requires the recovery key to be entered -->
     <string name="RecoveryKeyFlow.resetPINInstruction">請輸入復原金鑰,以便重設 PIN 碼。</string>
-    <!-- Assures the user that BRD will keep the user's funds secure. -->
+    <!-- Assures the user that BitkandaWallet will keep the user's funds secure. -->
     <string name="RecoveryKeyFlow.securityAssurance">儘管放心購買與交易,你的資金經由商業界最高層級的安全性和隱私權所保護。</string>
     <!-- Recommends that the user stores the recovery key in a secure location -->
-    <string name="RecoveryKeyFlow.storeSecurelyRecommendation">請將金鑰儲存在安全的位置,因為金鑰是你復原錢包的唯一途徑；BRD 並不會保留副本。</string>
+    <string name="RecoveryKeyFlow.storeSecurelyRecommendation">請將金鑰儲存在安全的位置,因為金鑰是你復原錢包的唯一途徑；BitkandaWallet 並不會保留副本。</string>
     <!-- Title for the success page after the recovery key has been set up -->
     <string name="RecoveryKeyFlow.successHeading">恭喜！你已經完成復原金鑰設定了。</string>
     <!-- Subtitle for the success page after the recovery key has been set up -->
-    <string name="RecoveryKeyFlow.successSubheading">你已經設定完畢,可以透過 BRD 錢包存放,交易和購買加密貨幣了。</string>
+    <string name="RecoveryKeyFlow.successSubheading">你已經設定完畢,可以透過 BitkandaWallet 錢包存放,交易和購買加密貨幣了。</string>
     <!-- Title displayed to the user on the intro screen when unlinking a wallet -->
     <string name="RecoveryKeyFlow.unlinkWallet">取消這個裝置與錢包的連結。</string>
     <!-- Subtitle displayed to the user on the intro screen when unlinking a wallet. -->
@@ -653,7 +653,7 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 分鐘</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">如果交易在比特幣網上已經顯示為完成，但沒有出現在您的 BRD 上。</string>
+    <string name="ReScan.body2">如果交易在Bitkanda網上已經顯示為完成，但沒有出現在您的 BitkandaWallet 上。</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">你不斷收到「交易被拒」的錯誤。</string>
     <!-- Start Sync button label -->
@@ -669,7 +669,7 @@
     <!-- Rewards view expanded body. -->
     <string name="RewardsView.expandedBody">了解如何節省交易費用，解鎖未來的財富。</string>
     <!-- Rewards view expanded title. -->
-    <string name="RewardsView.expandedTitle">我們為您介紹BRD Rewards。</string>
+    <string name="RewardsView.expandedTitle">我們為您介紹BitkandaWallet Rewards。</string>
     <!-- Rewards view title -->
     <string name="RewardsView.normalTitle">獎勵</string>
     <!-- Scan bitcoin address camera flash toggle -->
@@ -687,18 +687,18 @@
     <!-- Face ID button title -->
     <string name="SecurityCenter.faceIdTitle">Face ID</string>
     <!-- Paper Key button description -->
-    <string name="SecurityCenter.paperKeyDescription">您的手機遺失或升級時，存取您的比特幣唯一的方式。</string>
+    <string name="SecurityCenter.paperKeyDescription">您的手機遺失或升級時，存取您的Bitkanda唯一的方式。</string>
     <!-- Recovery Key button title. This used to be called 'paper key', so leaving the string key as `paperKeyTitle` in order
  * to not break existing client code. -->
     <string name="SecurityCenter.paperKeyTitle">紙本金鑰</string>
     <!-- Paper Key button title -->
     <string name="SecurityCenter.paperKeyTitle.android">紙本金鑰</string>
     <!-- PIN button description -->
-    <string name="SecurityCenter.pinDescription">保護您的 BRD，防範未經授權的使用者。</string>
+    <string name="SecurityCenter.pinDescription">保護您的 BitkandaWallet，防範未經授權的使用者。</string>
     <!-- PIN button title -->
     <string name="SecurityCenter.pinTitle">6 位數 PIN 碼</string>
     <!-- Touch ID button description -->
-    <string name="SecurityCenter.touchIdDescription">輕鬆解鎖您的 BRD，並在設定好的限額內寄送款項。</string>
+    <string name="SecurityCenter.touchIdDescription">輕鬆解鎖您的 BitkandaWallet，並在設定好的限額內寄送款項。</string>
     <!-- Touch ID button title -->
     <string name="SecurityCenter.touchIdTitle">Touch ID</string>
     <!-- Security center fingerprint authentication button -->
@@ -706,9 +706,9 @@
     <!-- Segwit enabled confirmation title -->
     <string name="Segwit.ConfirmationConfirmationTitle">您已啟用 SegWit！</string>
     <!-- Segwit enabled confirmation description -->
-    <string name="Segwit.ConfirmationInstructionsDescription">感謝您協助推動比特幣向前發展。</string>
+    <string name="Segwit.ConfirmationInstructionsDescription">感謝您協助推動Bitkanda向前發展。</string>
     <!-- Segwit instructions -->
-    <string name="Segwit.ConfirmationInstructionsInstructions">SegWit 支援仍為測試功能。\n一旦 SegWit 被啟用,將無法停用。您將能夠在設定中找到舊版位址。\n啟用 SegWit 的使用者可能無法使用某些第三方服務,包括加密貨幣交易。在緊急情況下,您可以在偏好選項 &gt; 比特幣設定中產生一個舊版位址。\n在未來更新中,SegWit 將自動為所有使用者啟用。</string>
+    <string name="Segwit.ConfirmationInstructionsInstructions">SegWit 支援仍為測試功能。\n一旦 SegWit 被啟用,將無法停用。您將能夠在設定中找到舊版位址。\n啟用 SegWit 的使用者可能無法使用某些第三方服務,包括加密貨幣交易。在緊急情況下,您可以在偏好選項 &gt; Bitkanda設定中產生一個舊版位址。\n在未來更新中,SegWit 將自動為所有使用者啟用。</string>
     <!-- Segwit extra confirmation title. -->
     <string name="Segwit.ConfirmChoiceLayout">啟用 SegWit 是不可逆轉的功能。確定要繼續嗎？</string>
     <!-- Segwit enableButton -->
@@ -720,13 +720,13 @@
     <!-- Balance: $4.00 -->
     <string name="Send.balance">餘額：%1$s</string>
     <!-- Instructions how to allow the camera access for the app -->
-    <string name="Send.cameraUnavailabeMessage.android">到「設定」 &gt; 「應用程式」 &gt; 「BRD」 &gt; 「權限」允許相機存取</string>
+    <string name="Send.cameraUnavailabeMessage.android">到「設定」 &gt; 「應用程式」 &gt; 「Bitkanda」 &gt; 「權限」允許相機存取</string>
     <!-- Permission required to access camera -->
-    <string name="Send.cameraUnavailabeTitle.android">BRD 尚未獲准存取相機</string>
+    <string name="Send.cameraUnavailabeTitle.android">BitkandaWallet 尚未獲准存取相機</string>
     <!-- Camera not allowed message -->
     <string name="Send.cameraunavailableMessage">請至「設定」允許存取相機。</string>
     <!-- Camera not allowed alert title -->
-    <string name="Send.cameraUnavailableTitle">BRD 未獲得存取相機的權限</string>
+    <string name="Send.cameraUnavailableTitle">BitkandaWallet 未獲得存取相機的權限</string>
     <!-- Warning when sending to self. -->
     <string name="Send.containsAddress">目的地為您自己的地址。您不能寄送給自己。</string>
     <!-- Could not create transaction alert title -->
@@ -756,7 +756,7 @@
     <!-- Is rescanning error message -->
     <string name="Send.isRescanning">完全重新掃描期間無法寄送。</string>
     <!-- Warning when the user is trying to send bitcoin cash to a legacy bitcoin address (possible, but probably not what the user wants to do) -->
-    <string name="Send.legacyAddressWarning">注意，這是一個 legacy 比特幣位址。您確定要傳送比特幣現金至此嗎？</string>
+    <string name="Send.legacyAddressWarning">注意，這是一個 legacy Bitkanda位址。您確定要傳送Bitkanda現金至此嗎？</string>
     <!-- We are loading the request (now) -->
     <string name="Send.loadingRequest">正在載入要求</string>
     <!-- Transaction fee could not be be caluculated error. -->
@@ -784,7 +784,7 @@
     <!-- Send money to label -->
     <string name="Send.toLabel">給</string>
     <!-- Adress already used alert message - first part -->
-    <string name="Send.UsedAddress.firstLine">比特幣位址專供一次性使用。</string>
+    <string name="Send.UsedAddress.firstLine">Bitkanda位址專供一次性使用。</string>
     <!-- Adress already used alert message - second part -->
     <string name="Send.UsedAddress.secondLIne">重複使用會降低您與收受者的隱私，如果收受者無法直接控制該位址，可能會造成損失。</string>
     <!-- Adress already used alert title -->
@@ -810,7 +810,7 @@
     <!-- Enable segwit. -->
     <string name="Settings.EnableSegwit">啟用 Segwit</string>
     <!-- Are you enjoying bread alert message body -->
-    <string name="Settings.enjoying">您喜歡 BRD 嗎？</string>
+    <string name="Settings.enjoying">您喜歡 BitkandaWallet 嗎？</string>
     <!-- Face ID spending limit label -->
     <string name="Settings.faceIdLimit">Face ID 消費上限</string>
     <!-- Redeem the funds stored on this private key. -->
@@ -842,15 +842,15 @@
     <!-- View legacy address (old format). -->
     <string name="Settings.ViewLegacyAddress">查看舊版接收位址</string>
     <!-- Receive Bitcoin instructions -->
-    <string name="Settings.ViewLegacyAddressReceiveDescription">請只發送比特幣（BTC）至此位址。任何發送到此位址的資產將永久遺失。</string>
+    <string name="Settings.ViewLegacyAddressReceiveDescription">請只發送Bitkanda（BKD）至此位址。任何發送到此位址的資產將永久遺失。</string>
     <!-- Receive Bitcoin -->
-    <string name="Settings.ViewLegacyAddressReceiveTitle">接收比特幣</string>
+    <string name="Settings.ViewLegacyAddressReceiveTitle">接收Bitkanda</string>
     <!-- Wallet Settings section header -->
     <string name="Settings.wallet">錢包</string>
     <!-- Unlink/delete your wallet from the current device. -->
     <string name="Settings.wipe">移除與此裝置連結</string>
     <!-- Share data view body -->
-    <string name="ShareData.body">請跟我們分享您的匿名資料，以協助我們改善 BRD。其中不會包含財務資訊。我們尊重您的財務隱私。</string>
+    <string name="ShareData.body">請跟我們分享您的匿名資料，以協助我們改善 BitkandaWallet。其中不會包含財務資訊。我們尊重您的財務隱私。</string>
     <!-- Share data header -->
     <string name="ShareData.header">分享資料？</string>
     <!-- Share data switch label. -->
@@ -858,9 +858,9 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">再寫一次紙本金鑰</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">您的手機遺失、損壞或升級時，紙本金鑰是復原\n BRD 唯一的方式。\n\n我們會向您出示一個字串，請寫在紙上並妥善保管。</string>
+    <string name="StartPaperPhrase.body">您的手機遺失、損壞或升級時，紙本金鑰是復原\n BitkandaWallet 唯一的方式。\n\n我們會向您出示一個字串，請寫在紙上並妥善保管。</string>
     <!-- Paper key explanation text (Android-version) -->
-    <string name="StartPaperPhrase.Body.Android">如果您的手機遺失,遭竊,損壞或升級,您的紙上金鑰是恢復比特幣錢包 (BRD) 的唯一方法。\n\n如果變更裝置上的安全設定,也需要提供紙上金鑰。\n\n我們將向您展示一張單詞列表,寫在一張紙上並妥善保管。</string>
+    <string name="StartPaperPhrase.Body.Android">如果您的手機遺失,遭竊,損壞或升級,您的紙上金鑰是恢復Bitkanda錢包 (BitkandaWallet) 的唯一方法。\n\n如果變更裝置上的安全設定,也需要提供紙上金鑰。\n\n我們將向您展示一張單詞列表,寫在一張紙上並妥善保管。</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">寫下紙本金鑰</string>
     <!-- Argument is date; date should be on a new line -->
@@ -868,7 +868,7 @@
     <!-- button label -->
     <string name="StartViewController.createButton">創建新錢包</string>
     <!-- Start view message -->
-    <string name="StartViewController.message">使用比特幣最安全、最有保障的方式。</string>
+    <string name="StartViewController.message">使用Bitkanda最安全、最有保障的方式。</string>
     <!-- Recover your wallet from a backup -->
     <string name="StartViewController.recoverButton">恢復錢包</string>
     <!-- Syncing view done syncing state header text -->
@@ -914,13 +914,13 @@
     <!-- Fingerprint Is Not Setup -->
     <string name="TouchIdSettings.disabledWarning.title.android">指紋驗證並未啟用</string>
     <!-- Touch Id screen label -->
-    <string name="TouchIdSettings.label">以您的指紋解鎖 BRD，並在設定好的限額內寄送款項。</string>
+    <string name="TouchIdSettings.label">以您的指紋解鎖 BitkandaWallet，並在設定好的限額內寄送款項。</string>
     <!-- Link Text (see TouchIdSettings.customizeText) -->
     <string name="TouchIdSettings.linkText">Touch ID 支出限額畫面</string>
     <!-- Spending Limit: b100,000 ($100) -->
     <string name="TouchIdSettings.spendingLimit">花費上限：%1$s（%2$s）</string>
     <!-- Touch id switch label. -->
-    <string name="TouchIdSettings.switchLabel">為 BRD 啟用 Touch ID</string>
+    <string name="TouchIdSettings.switchLabel">為 BitkandaWallet 啟用 Touch ID</string>
     <!-- Enable fingerprint for this wallet called Bread -->
     <string name="TouchIdSettings.switchLabel.android">指紋驗證</string>
     <!-- Touch ID settings view title -->
@@ -971,7 +971,7 @@
     <string name="Transaction.sentTo">寄送至 %1$s</string>
     <!-- eg. Starting balance: $50.00 -->
     <string name="Transaction.starting">開始餘額：%1$s</string>
-    <!-- e.g. "[The money you paid was a] Fee for token transfer: BRD" (BRD is the token that was transfered) -->
+    <!-- e.g. "[The money you paid was a] Fee for token transfer: BitkandaWallet" (BitkandaWallet is the token that was transfered) -->
     <string name="Transaction.tokenTransfer">代幣傳送費用：%1$s</string>
     <!-- Waiting to be confirmed string -->
     <string name="Transaction.waiting">正在等待確認。部分商家要求確認完成交易。預估時間：1-2 小時。</string>
@@ -1065,7 +1065,7 @@
     <!-- Tx detail field header -->
     <string name="TransactionDetails.totalHeader">總計</string>
     <!-- Transaction ID header -->
-    <string name="TransactionDetails.txHashHeader">比特幣交易識別碼</string>
+    <string name="TransactionDetails.txHashHeader">Bitkanda交易識別碼</string>
     <!-- (this transaction was) Received at this address: -->
     <string name="TransactionDirection.address">已於此地址接收</string>
     <!-- (this transaction was) Sent to this address: -->
@@ -1083,7 +1083,7 @@
     <!-- Instruction to touch the sensor for fingerprint authentication -->
     <string name="UnlockScreen.touchIdInstructions.android">觸控感測器</string>
     <!-- TouchID prompt text -->
-    <string name="UnlockScreen.touchIdPrompt">解鎖您的 BRD。</string>
+    <string name="UnlockScreen.touchIdPrompt">解鎖您的 BitkandaWallet。</string>
     <!-- Device authentication body -->
     <string name="UnlockScreen.touchIdPrompt.android">請解除鎖定您的 Android 裝置來繼續。</string>
     <!-- Unlock with TouchID accessibility label -->
@@ -1091,9 +1091,9 @@
     <!-- Device authentication title -->
     <string name="UnlockScreen.touchIdTitle.android">需要驗證</string>
     <!-- Update PIN caption text -->
-    <string name="UpdatePin.caption">請記住此 PIN 碼。如果忘記，會無法存取您的比特幣。</string>
+    <string name="UpdatePin.caption">請記住此 PIN 碼。如果忘記，會無法存取您的Bitkanda。</string>
     <!-- PIN creation info. -->
-    <string name="UpdatePin.createInstruction">您的 PIN 碼會用於解鎖 BRD 及送出款項。</string>
+    <string name="UpdatePin.createInstruction">您的 PIN 碼會用於解鎖 BitkandaWallet 及送出款項。</string>
     <!-- Update PIN title -->
     <string name="UpdatePin.createTitle">設定 PIN 碼</string>
     <!-- Update PIN title -->
@@ -1127,7 +1127,7 @@
     <!-- Authorize transaction with touch id message -->
     <string name="VerifyPin.touchIdMessage">授權此交易</string>
     <!-- 'No wallet' warning for watch app -->
-    <string name="Watch.noWalletWarning">開啟 BRDiPhone 應用程式以設定您的錢包。</string>
+    <string name="Watch.noWalletWarning">開啟 BitkandaWalletiPhone 應用程式以設定您的錢包。</string>
     <!-- Dismiss button label -->
     <string name="Webview.dismiss">駁回</string>
     <!-- Webview loading error message -->
@@ -1135,9 +1135,9 @@
     <!-- Updating webview message -->
     <string name="Webview.updating">正在更新……</string>
     <!-- Welcome screen text. (?) will be replaced with the help icon users should look for. -->
-    <string name="Welcome.body">Breadwallet 已經改名爲 BRD，有嶄新的面貌和一些新功能。\n\n如果需要協助，就在大部分畫面的右上角尋找(?)。</string>
+    <string name="Welcome.body">Breadwallet 已經改名爲 BitkandaWallet，有嶄新的面貌和一些新功能。\n\n如果需要協助，就在大部分畫面的右上角尋找(?)。</string>
     <!-- Top title of welcome screen -->
-    <string name="Welcome.title">歡迎使用 BRD！</string>
+    <string name="Welcome.title">歡迎使用 BitkandaWallet！</string>
     <!-- Wipe wallet alert message -->
     <string name="WipeWallet.alertMessage">確定要刪除此錢包嗎？</string>
     <!-- Wipe wallet alert title -->
@@ -1151,7 +1151,7 @@
     <!-- Instructions for unlinking the wallet -->
     <string name="WipeWallet.startMessage">自此裝置移除您錢包的連結。一旦移除此錢包的連結，您可在此裝置上啟用新錢包或恢復其他不同錢包。</string>
     <!-- Start wipe wallet view warning -->
-    <string name="WipeWallet.startWarning">您將再也無法從這項裝置存取目前的 BRD 錢包。餘額會留在片段上。</string>
+    <string name="WipeWallet.startWarning">您將再也無法從這項裝置存取目前的 Bitkanda 錢包。餘額會留在片段上。</string>
     <!-- Unlink this wallet from this device. -->
     <string name="WipeWallet.title">移除錢包連結</string>
     <!-- Wipe wallet button title -->
