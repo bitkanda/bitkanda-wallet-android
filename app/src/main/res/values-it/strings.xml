@@ -435,7 +435,7 @@
     <!-- Onboarding screen Page 2 subtitle -->
     <string name="OnboardingPageTwo.subtitle">Abbiamo un patrimonio di oltre $ 6 miliardi sotto protezione.</string>
     <!-- Onboarding screen Page 2 title -->
-    <string name="OnboardingPageTwo.title">Unisciti a milioni di persone che in tutto il mondo si fidano di BRD.</string>
+    <string name="OnboardingPageTwo.title">Unisciti a milioni di persone che in tutto il mondo si fidano di Bitkanda.</string>
     <!-- Eg. Send 1.0Eth to purchase CCC -->
     <string name="PaymentConfirmation.amountText">Invia %1$s per acquistare %2$s</string>
     <!-- Payment confirmation view title -->
@@ -858,9 +858,9 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">Annota di nuovo la Paper Key</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">La tua Paper Key è l\'unico modo per ripristinare il tuo BRD, nel caso il tuo telefono sia perso, rubato, rotto o aggiornato.\n\nTi mostreremo un elenco di parole da annotare su un pezzo di carta e conservare al sicuro.</string>
+    <string name="StartPaperPhrase.body">La tua Paper Key è l\'unico modo per ripristinare il tuo Bitkanda Wallet, nel caso il tuo telefono sia perso, rubato, rotto o aggiornato.\n\nTi mostreremo un elenco di parole da annotare su un pezzo di carta e conservare al sicuro.</string>
     <!-- Paper key explanation text (Android-version) -->
-    <string name="StartPaperPhrase.Body.Android">La chiave di sicurezza è il solo modo per ripristinare il tuo BRD se il tuo telefono viene perso, rubato, rotto, o aggiornato.\n\nLa tua chiave di sicurezza è richiesta anche se cambi le impostazioni di sicurezza del dispositivo.\n\nTi mostreremo una lista di parole da scrivere su un pezzo di carta e tenere al sicuro.</string>
+    <string name="StartPaperPhrase.Body.Android">La chiave di sicurezza è il solo modo per ripristinare il tuo Bitkanda Wallet se il tuo telefono viene perso, rubato, rotto, o aggiornato.\n\nLa tua chiave di sicurezza è richiesta anche se cambi le impostazioni di sicurezza del dispositivo.\n\nTi mostreremo una lista di parole da scrivere su un pezzo di carta e tenere al sicuro.</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">Annota la Paper Key</string>
     <!-- Argument is date; date should be on a new line -->
@@ -1093,7 +1093,7 @@
     <!-- Update PIN caption text -->
     <string name="UpdatePin.caption">Ricorda questo PIN. Se lo dimentichi, non sarai in grado di accedere al tuo bitcoin.</string>
     <!-- PIN creation info. -->
-    <string name="UpdatePin.createInstruction">Il PIN verrà utilizzato per sbloccare il tuo BRD e inviare denaro.</string>
+    <string name="UpdatePin.createInstruction">Il PIN verrà utilizzato per sbloccare il tuo Bitkanda e inviare denaro.</string>
     <!-- Update PIN title -->
     <string name="UpdatePin.createTitle">Imposta PIN</string>
     <!-- Update PIN title -->

@@ -858,9 +858,9 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">再次书写纸键</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">如果您的手机丢失、被盗、损坏或升级，纸上密钥是恢复 BitkandaWallet 的唯一方法。\n\n\n我们将向您显示一张单词表，请将其写在纸上并保存在安全的地方。</string>
+    <string name="StartPaperPhrase.body">如果您的手机丢失、被盗、损坏或升级，纸上密钥是恢复 Bitkanda Wallet 的唯一方法。\n\n\n我们将向您显示一张单词表，请将其写在纸上并保存在安全的地方。</string>
     <!-- Paper key explanation text (Android-version) -->
-    <string name="StartPaperPhrase.Body.Android">在手机丢失,被盗,损坏或升级情况下,纸钥是您恢复 BitkandaWallet 的唯一方法。\n\n您需要提供纸钥以更改手机安全设置。\n\n我们将向您展示一份单词列表,请您记录在纸上并妥善保管。</string>
+    <string name="StartPaperPhrase.Body.Android">在手机丢失,被盗,损坏或升级情况下,纸钥是您恢复 Bitkanda Wallet 的唯一方法。\n\n您需要提供纸钥以更改手机安全设置。\n\n我们将向您展示一份单词列表,请您记录在纸上并妥善保管。</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">写下纸键</string>
     <!-- Argument is date; date should be on a new line -->

@@ -435,7 +435,7 @@
     <!-- Onboarding screen Page 2 subtitle -->
     <string name="OnboardingPageTwo.subtitle">Temos activos protegidos no valor de mais de 6 mil milhões de dólares. </string>
     <!-- Onboarding screen Page 2 title -->
-    <string name="OnboardingPageTwo.title">Junte-se a milhões de pessoas em todo o mundo que confiam em BRD.</string>
+    <string name="OnboardingPageTwo.title">Junte-se a milhões de pessoas em todo o mundo que confiam em Bitkanda.</string>
     <!-- Eg. Send 1.0Eth to purchase CCC -->
     <string name="PaymentConfirmation.amountText">Enviar %1$s para comprar %2$s</string>
     <!-- Payment confirmation view title -->
@@ -858,9 +858,9 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">Escrever Novamente Chave de Papel</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">A chave de papel é a única forma de restaurar a sua BRD se o seu telefone for perdido, roubado, partido ou atualizado.\n\nVamos mostrar-lhe uma lista de palavras para escrever numa folha de papel e manter em segurança.</string>
+    <string name="StartPaperPhrase.body">A chave de papel é a única forma de restaurar a sua Bitkanda Wallet se o seu telefone for perdido, roubado, partido ou atualizado.\n\nVamos mostrar-lhe uma lista de palavras para escrever numa folha de papel e manter em segurança.</string>
     <!-- Paper key explanation text (Android-version) -->
-    <string name="StartPaperPhrase.Body.Android">A sua chave de papel é a única forma de restaurar a sua BRD se o seu telefone se perder, partir, for roubado ou atualizado.\n\nA sua chave de papel também é necessária se alterar as definições de segurança do seu dispositivo.\n\nVamos mostrar-lhe uma lista de palavras para escrever numa folha de papel e manter em segurança.</string>
+    <string name="StartPaperPhrase.Body.Android">A sua chave de papel é a única forma de restaurar a sua Bitkanda Wallet se o seu telefone se perder, partir, for roubado ou atualizado.\n\nA sua chave de papel também é necessária se alterar as definições de segurança do seu dispositivo.\n\nVamos mostrar-lhe uma lista de palavras para escrever numa folha de papel e manter em segurança.</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">Escrever Chave de Papel</string>
     <!-- Argument is date; date should be on a new line -->
@@ -1093,7 +1093,7 @@
     <!-- Update PIN caption text -->
     <string name="UpdatePin.caption">Lembre-se deste PIN. Se o esquecer, não será capaz de aceder às suas bitcoins.</string>
     <!-- PIN creation info. -->
-    <string name="UpdatePin.createInstruction">O seu PIN será usado para desbloquear a sua BRD e para enviar dinheiro.</string>
+    <string name="UpdatePin.createInstruction">O seu PIN será usado para desbloquear a sua Bitkanda e para enviar dinheiro.</string>
     <!-- Update PIN title -->
     <string name="UpdatePin.createTitle">Definir PIN</string>
     <!-- Update PIN title -->

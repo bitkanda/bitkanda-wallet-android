@@ -435,7 +435,7 @@
     <!-- Onboarding screen Page 2 subtitle -->
     <string name="OnboardingPageTwo.subtitle">We hebben meer dan $6 miljard USD waard aan aandelen onder onze bescherming.</string>
     <!-- Onboarding screen Page 2 title -->
-    <string name="OnboardingPageTwo.title">Sluit je aan bij miljoenen mensen over de hele wereld die op BRD vertrouwen.</string>
+    <string name="OnboardingPageTwo.title">Sluit je aan bij miljoenen mensen over de hele wereld die op Bitkanda vertrouwen.</string>
     <!-- Eg. Send 1.0Eth to purchase CCC -->
     <string name="PaymentConfirmation.amountText">%1$s versturen om %2$s te kopen</string>
     <!-- Payment confirmation view title -->
@@ -858,9 +858,9 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">Schrijf Papieren Sleutel Opnieuw Op</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">Je papieren sleutel is de enige manier om je BRD te herstellen als je telefoon verloren, gestolen, kapot of geüpgrade is.\n\nWe zullen je een lijst met woorden laten zie die je op een papiertje moet schrijven en veilig moet bewaren.</string>
+    <string name="StartPaperPhrase.body">Je papieren sleutel is de enige manier om je Bitkanda Wallet te herstellen als je telefoon verloren, gestolen, kapot of geüpgrade is.\n\nWe zullen je een lijst met woorden laten zie die je op een papiertje moet schrijven en veilig moet bewaren.</string>
     <!-- Paper key explanation text (Android-version) -->
-    <string name="StartPaperPhrase.Body.Android">Uw papieren sleutel is de enige manier om uw BRD te herstellen indien u uw telefoon kwijtraakt of als deze gestolen of geüpgraded wordt. \n\nU heeft uw papieren sleutel tevens nodig indien u de beveiligingsinstellingen van uw apparaat aanpast.\n\nWe tonen u een lijst met woorden die u op een stuk papier kunt opschrijven en veilig dient te bewaren.</string>
+    <string name="StartPaperPhrase.Body.Android">Uw papieren sleutel is de enige manier om uw Bitkanda Wallet te herstellen indien u uw telefoon kwijtraakt of als deze gestolen of geüpgraded wordt. \n\nU heeft uw papieren sleutel tevens nodig indien u de beveiligingsinstellingen van uw apparaat aanpast.\n\nWe tonen u een lijst met woorden die u op een stuk papier kunt opschrijven en veilig dient te bewaren.</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">Schrijf Papieren Sleutel Op</string>
     <!-- Argument is date; date should be on a new line -->
@@ -1093,7 +1093,7 @@
     <!-- Update PIN caption text -->
     <string name="UpdatePin.caption">Onthoud deze PIN. Als je deze vergeet, zul je niet in staat zijn om bij je Bitcoins te kunnen.</string>
     <!-- PIN creation info. -->
-    <string name="UpdatePin.createInstruction">Je PIN zal worden gebruikt om je BRD te ontgrendelen en geld te versturen.</string>
+    <string name="UpdatePin.createInstruction">Je PIN zal worden gebruikt om je Bitkanda te ontgrendelen en geld te versturen.</string>
     <!-- Update PIN title -->
     <string name="UpdatePin.createTitle">PIN Instellen</string>
     <!-- Update PIN title -->

@@ -435,7 +435,7 @@
     <!-- Onboarding screen Page 2 subtitle -->
     <string name="OnboardingPageTwo.subtitle">当社の保護下には,60億USドル超相当の資産があります。</string>
     <!-- Onboarding screen Page 2 title -->
-    <string name="OnboardingPageTwo.title">世界中で何百万もの人々がBRDを利用しています。あなたもぜひ。</string>
+    <string name="OnboardingPageTwo.title">世界中で何百万もの人々がBitkandaを利用しています。あなたもぜひ。</string>
     <!-- Eg. Send 1.0Eth to purchase CCC -->
     <string name="PaymentConfirmation.amountText">%2$sを購入するために%1$sを送金する</string>
     <!-- Payment confirmation view title -->
@@ -860,7 +860,7 @@
     <!-- Paper key explanation text. -->
     <string name="StartPaperPhrase.body">復元フレーズは、スマートフォンを紛失したり、盗まれたり、壊れたり、アップグレードした場合に、ご自身のブレッドを元に戻せる唯一の方法です。\n\n単語の一覧を表示しますので、紙に書き留めて安全に保管してください。</string>
     <!-- Paper key explanation text (Android-version) -->
-    <string name="StartPaperPhrase.Body.Android">お客様のペーパー・キーは携帯電話の紛失,盗難,故障またはアップグレードした際にBRDを復元する唯一の方法です。\n\nペーパー・キーはお客様のデバイスでセキュリティ設定を変更した際も必要となります。\n\n紙に書き留めて保管する単語リストを表示します。</string>
+    <string name="StartPaperPhrase.Body.Android">お客様のペーパー・キーは携帯電話の紛失,盗難,故障またはアップグレードした際にBitkandaを復元する唯一の方法です。\n\nペーパー・キーはお客様のデバイスでセキュリティ設定を変更した際も必要となります。\n\n紙に書き留めて保管する単語リストを表示します。</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">復元フレーズを書き留めてください</string>
     <!-- Argument is date; date should be on a new line -->

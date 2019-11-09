@@ -435,7 +435,7 @@
     <!-- Onboarding screen Page 2 subtitle -->
     <string name="OnboardingPageTwo.subtitle">Tenemos activos protegidos por valor de más de 6 billones de $.</string>
     <!-- Onboarding screen Page 2 title -->
-    <string name="OnboardingPageTwo.title">Únete a millones de personas en todo el mundo que confían en BRD.</string>
+    <string name="OnboardingPageTwo.title">Únete a millones de personas en todo el mundo que confían en Bitkanda.</string>
     <!-- Eg. Send 1.0Eth to purchase CCC -->
     <string name="PaymentConfirmation.amountText">Envía %1$s para comprar %2$s</string>
     <!-- Payment confirmation view title -->
@@ -858,9 +858,9 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">Apunta nuevamente la clave en papel</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">Tu clave de papel es la única manera de restaurar tu BRD si pierdes tu teléfono, o te lo roban, se rompe o se actualiza.\n\nTe mostraremos una lista de palabras para apuntar en un trozo de papel y guardarlo en un sitio seguro.</string>
+    <string name="StartPaperPhrase.body">Tu clave de papel es la única manera de restaurar tu Bitkanda Wallet si pierdes tu teléfono, o te lo roban, se rompe o se actualiza.\n\nTe mostraremos una lista de palabras para apuntar en un trozo de papel y guardarlo en un sitio seguro.</string>
     <!-- Paper key explanation text (Android-version) -->
-    <string name="StartPaperPhrase.Body.Android">Tu clave de papel es la única manera de recuperar tu BRD si pierdes el teléfono o te lo roban, se rompe o lo actualizas.\n\nTu clave de papel también es necesaria si cambias los ajustes de seguridad del dispositivo.\n\nTe mostraremos una lista de palabras que deberás anotar en un papel que tendrás que guardar en un lugar seguro.</string>
+    <string name="StartPaperPhrase.Body.Android">Tu clave de papel es la única manera de recuperar tu Bitkanda Wallet si pierdes el teléfono o te lo roban, se rompe o lo actualizas.\n\nTu clave de papel también es necesaria si cambias los ajustes de seguridad del dispositivo.\n\nTe mostraremos una lista de palabras que deberás anotar en un papel que tendrás que guardar en un lugar seguro.</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">Apuntar la clave en papel</string>
     <!-- Argument is date; date should be on a new line -->
@@ -1093,7 +1093,7 @@
     <!-- Update PIN caption text -->
     <string name="UpdatePin.caption">Recuerda este PIN. Si lo olvidas, no podrás acceder a tu bitcoin.</string>
     <!-- PIN creation info. -->
-    <string name="UpdatePin.createInstruction">Tu PIN se usará para desbloquear BRD y enviar dinero.</string>
+    <string name="UpdatePin.createInstruction">Tu PIN se usará para desbloquear Bitkanda y enviar dinero.</string>
     <!-- Update PIN title -->
     <string name="UpdatePin.createTitle">Establecer PIN</string>
     <!-- Update PIN title -->

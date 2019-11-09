@@ -435,7 +435,7 @@
     <!-- Onboarding screen Page 2 subtitle -->
     <string name="OnboardingPageTwo.subtitle">Vi har skyddade tillgångar värda över 6 miljarder  USD.</string>
     <!-- Onboarding screen Page 2 title -->
-    <string name="OnboardingPageTwo.title">Bli en av miljontals människor runt om i världen som litar på BRD.</string>
+    <string name="OnboardingPageTwo.title">Bli en av miljontals människor runt om i världen som litar på Bitkanda.</string>
     <!-- Eg. Send 1.0Eth to purchase CCC -->
     <string name="PaymentConfirmation.amountText">Skicka %1$s för att köpa %2$s</string>
     <!-- Payment confirmation view title -->
@@ -858,9 +858,9 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">Skriv ner ordnyckel på nytt</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">Din ordnyckel  är enda sättet att återställ BRD om du förlorat din telefon, blivit bestulen på den eller har uppgraderat den.\n\nVi visar dig en lista över ord som du kan skriva ner på ett papper och gömma undan.</string>
+    <string name="StartPaperPhrase.body">Din ordnyckel  är enda sättet att återställ Bitkanda Wallet om du förlorat din telefon, blivit bestulen på den eller har uppgraderat den.\n\nVi visar dig en lista över ord som du kan skriva ner på ett papper och gömma undan.</string>
     <!-- Paper key explanation text (Android-version) -->
-    <string name="StartPaperPhrase.Body.Android">Det är enbart med din skrivna nyckel du kan återställa BRD om din telefon försvinner, går sönder eller uppgraderas. \n\nDen skrivna nyckeln behövs också om du ändrar säkerhetsinställningarna på din enhet. \n\nVi visar dig en lista med ord som du ska nedteckna på ett papper och förvara säkert. </string>
+    <string name="StartPaperPhrase.Body.Android">Det är enbart med din skrivna nyckel du kan återställa Bitkanda Wallet om din telefon försvinner, går sönder eller uppgraderas. \n\nDen skrivna nyckeln behövs också om du ändrar säkerhetsinställningarna på din enhet. \n\nVi visar dig en lista med ord som du ska nedteckna på ett papper och förvara säkert. </string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">Skriv ner ordnyckel</string>
     <!-- Argument is date; date should be on a new line -->
@@ -1093,7 +1093,7 @@
     <!-- Update PIN caption text -->
     <string name="UpdatePin.caption">Kom ihåg PIN-koden. Om du glömmer den, kommer du inte åt dina bitcoin.</string>
     <!-- PIN creation info. -->
-    <string name="UpdatePin.createInstruction">Din PIN-kod används för att låsa upp ditt BRD och skicka pengar</string>
+    <string name="UpdatePin.createInstruction">Din PIN-kod används för att låsa upp ditt Bitkanda och skicka pengar</string>
     <!-- Update PIN title -->
     <string name="UpdatePin.createTitle">Ställ in PIN-kod</string>
     <!-- Update PIN title -->

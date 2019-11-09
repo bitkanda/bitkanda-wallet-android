@@ -435,7 +435,7 @@
     <!-- Onboarding screen Page 2 subtitle -->
     <string name="OnboardingPageTwo.subtitle">Vi har aktiver til en værdi af mere end 6 milliarder dollars under vores beskyttelse.</string>
     <!-- Onboarding screen Page 2 title -->
-    <string name="OnboardingPageTwo.title">Gør som millioner af mennesker over hele verden, der stoler på BRD.</string>
+    <string name="OnboardingPageTwo.title">Gør som millioner af mennesker over hele verden, der stoler på Bitkanda.</string>
     <!-- Eg. Send 1.0Eth to purchase CCC -->
     <string name="PaymentConfirmation.amountText">Send %1$s for at købe %2$s</string>
     <!-- Payment confirmation view title -->
@@ -858,9 +858,9 @@
     <!-- button label -->
     <string name="StartPaperPhrase.againButtonTitle">Skriv paper key ned igen</string>
     <!-- Paper key explanation text. -->
-    <string name="StartPaperPhrase.body">Din paper key er den eneste måde at gendanne dit BRD på, hvis din telefon mistes, stjæles, går i stykker eller opgraderes.\n\nVi viser dig en liste over word du skal skrive ned på et papir, og holde sikkert.</string>
+    <string name="StartPaperPhrase.body">Din paper key er den eneste måde at gendanne dit Bitkanda Wallet på, hvis din telefon mistes, stjæles, går i stykker eller opgraderes.\n\nVi viser dig en liste over word du skal skrive ned på et papir, og holde sikkert.</string>
     <!-- Paper key explanation text (Android-version) -->
-    <string name="StartPaperPhrase.Body.Android">Din papirnøgle er den eneste måde hvorpå du kan gendanne din BRD, hvis din telefon går tabt, bliver stjålet, ødelagt eller opgraderet.\n\nDin papirnøgle er også påkrævet, hvis du ændrer sikkerhedsindstillingerne på din enhed.\n\nVi viser dig en liste med ord, som du skal skrive ned på et stykke papir og opbevare sikkert.</string>
+    <string name="StartPaperPhrase.Body.Android">Din papirnøgle er den eneste måde hvorpå du kan gendanne din Bitkanda Wallet, hvis din telefon går tabt, bliver stjålet, ødelagt eller opgraderet.\n\nDin papirnøgle er også påkrævet, hvis du ændrer sikkerhedsindstillingerne på din enhed.\n\nVi viser dig en liste med ord, som du skal skrive ned på et stykke papir og opbevare sikkert.</string>
     <!-- button label -->
     <string name="StartPaperPhrase.buttonTitle">Skriv paper key ned</string>
     <!-- Argument is date; date should be on a new line -->
@@ -1093,7 +1093,7 @@
     <!-- Update PIN caption text -->
     <string name="UpdatePin.caption">Husk denne PIN. Hvis du glemmer den, vil du ikke kunne få adgang til dine bitcoin.</string>
     <!-- PIN creation info. -->
-    <string name="UpdatePin.createInstruction">Din PIN bliver brugt til at låse op for dit BRD og sende penge.</string>
+    <string name="UpdatePin.createInstruction">Din PIN bliver brugt til at låse op for dit Bitkanda og sende penge.</string>
     <!-- Update PIN title -->
     <string name="UpdatePin.createTitle">Indstil PIN</string>
     <!-- Update PIN title -->
