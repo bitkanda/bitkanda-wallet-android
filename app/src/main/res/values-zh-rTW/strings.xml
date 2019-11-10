@@ -557,7 +557,7 @@
     <!-- Enter paper key instruction -->
     <string name="RecoverWallet.instruction">輸入紙本金鑰</string>
     <!-- Recover wallet intro -->
-    <string name="RecoverWallet.intro">以您的紙本金鑰復原您的 BitkandaWallet</string>
+    <string name="RecoverWallet.intro">以您的紙本金鑰復原您的 Bitkanda Wallet</string>
     <!-- Invalid paper key message -->
     <string name="RecoverWallet.invalid">紙本金鑰</string>
     <!-- Previous button accessibility label -->

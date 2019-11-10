@@ -557,7 +557,7 @@
     <!-- Enter paper key instruction -->
     <string name="RecoverWallet.instruction">Ange ordnyckel</string>
     <!-- Recover wallet intro -->
-    <string name="RecoverWallet.intro">Återställ BRD med din ordnyckel.</string>
+    <string name="RecoverWallet.intro">Återställ Bitkanda Wallet med din ordnyckel.</string>
     <!-- Invalid paper key message -->
     <string name="RecoverWallet.invalid">Den ordnyckel du angav är ogiltig. Dubbelkolla varje ord och försök igen.</string>
     <!-- Previous button accessibility label -->

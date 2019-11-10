@@ -557,7 +557,7 @@
     <!-- Enter paper key instruction -->
     <string name="RecoverWallet.instruction">Offlineschlüssel eingeben</string>
     <!-- Recover wallet intro -->
-    <string name="RecoverWallet.intro">Stelle dein BRD mithilfe deines Offlineschlüssels wieder her.</string>
+    <string name="RecoverWallet.intro">Stelle dein Bitkanda Wallet mithilfe deines Offlineschlüssels wieder her.</string>
     <!-- Invalid paper key message -->
     <string name="RecoverWallet.invalid">Der von dir eingegebene Offlineschlüssel ist ungültig. Bitte überprüfe nochmal jedes Wort und versuche es erneut.</string>
     <!-- Previous button accessibility label -->

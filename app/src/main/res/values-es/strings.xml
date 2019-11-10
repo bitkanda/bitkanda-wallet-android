@@ -557,7 +557,7 @@
     <!-- Enter paper key instruction -->
     <string name="RecoverWallet.instruction">Introducir clave en papel</string>
     <!-- Recover wallet intro -->
-    <string name="RecoverWallet.intro">Recupera tu BRD con la clave en papel.</string>
+    <string name="RecoverWallet.intro">Recupera tu Bitkanda Wallet con la clave en papel.</string>
     <!-- Invalid paper key message -->
     <string name="RecoverWallet.invalid">La clave en papel que acabas de introducir no es válida. Vuelve a comprobar cada palabra e inténtalo de nuevo.</string>
     <!-- Previous button accessibility label -->

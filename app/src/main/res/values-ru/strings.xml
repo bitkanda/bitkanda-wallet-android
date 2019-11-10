@@ -557,7 +557,7 @@
     <!-- Enter paper key instruction -->
     <string name="RecoverWallet.instruction">Введите бумажный ключ</string>
     <!-- Recover wallet intro -->
-    <string name="RecoverWallet.intro">Восстановите Ваш BRD-кошелек с помощью бумажного ключа.</string>
+    <string name="RecoverWallet.intro">Восстановите Ваш Bitkanda Wallet-кошелек с помощью бумажного ключа.</string>
     <!-- Invalid paper key message -->
     <string name="RecoverWallet.invalid">Введенный вами бумажный ключ недействителен. Пожалуйста, внимательно перепроверьте каждое слово и повторите попытку.</string>
     <!-- Previous button accessibility label -->

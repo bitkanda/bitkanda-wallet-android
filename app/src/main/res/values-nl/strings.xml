@@ -557,7 +557,7 @@
     <!-- Enter paper key instruction -->
     <string name="RecoverWallet.instruction">Papieren Sleutel Invoeren</string>
     <!-- Recover wallet intro -->
-    <string name="RecoverWallet.intro">Herstel je BRD met je papieren sleutel.</string>
+    <string name="RecoverWallet.intro">Herstel je Bitkanda Wallet met je papieren sleutel.</string>
     <!-- Invalid paper key message -->
     <string name="RecoverWallet.invalid">De papieren sleutel die je hebt ingevoerd is ongeldig. Check ieder woord a.u.b. en probeer het opnieuw.</string>
     <!-- Previous button accessibility label -->
