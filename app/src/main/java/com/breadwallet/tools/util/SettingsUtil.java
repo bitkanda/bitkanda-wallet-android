@@ -53,7 +53,9 @@ import com.breadwallet.wallet.wallets.bitcoin.WalletBitcoinManager;
 import com.platform.APIClient;
 import com.platform.HTTPServer;
 import com.platform.RequestBuilderKt;
+import com.platform.entities.TokenListMetaData;
 import com.platform.middlewares.plugins.LinkPlugin;
+import com.platform.tools.KVStoreManager;
 import com.platform.util.AppReviewPromptManager;
 
 import java.util.ArrayList;
@@ -112,12 +114,16 @@ public final class SettingsUtil {
         settingsItems.add(new BRSettingsItem(activity.getString(R.string.MenuButton_scan), "", view -> {
             UiUtils.openScanner(activity);
         }, false, R.drawable.ic_camera));
+        //disable MenuButton_manageWallets
+        List<TokenListMetaData.TokenInfo> mTokens   = KVStoreManager.getTokenListMetaData(activity).enabledCurrencies;
+        if(mTokens.size()>1) {
+            settingsItems.add(new BRSettingsItem(activity.getString(R.string.MenuButton_manageWallets), "", view -> {
+                Intent intent = new Intent(activity, ManageWalletsActivity.class);
+                activity.startActivity(intent);
+                activity.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
+            }, false, R.drawable.ic_wallet));
+        }
 
-        settingsItems.add(new BRSettingsItem(activity.getString(R.string.MenuButton_manageWallets), "", view -> {
-            Intent intent = new Intent(activity, ManageWalletsActivity.class);
-            activity.startActivity(intent);
-            activity.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
-        }, false, R.drawable.ic_wallet));
 
         settingsItems.add(new BRSettingsItem(activity.getString(R.string.Settings_preferences), "", view -> {
             Intent intent = new Intent(activity, SettingsActivity.class);

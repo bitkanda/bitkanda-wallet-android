@@ -44,6 +44,7 @@ public class CurrencyUtils {
     private static final String KRONE = "DKK";
     private static final String POUND = "GBP";
     private static final String EURO = "EUR";
+    private  static  int getDefaultFractionDigits=0;
 
     public static String getFormattedAmount(Context app, String iso, BigDecimal amount) {
         //Use default (wallet's maxDecimal places)
@@ -77,10 +78,8 @@ public class CurrencyUtils {
             decimalFormatSymbols.setCurrencySymbol("");
             currencyFormat.setDecimalFormatSymbols(decimalFormatSymbols);
             currencyFormat.setMaximumFractionDigits(maxDecimalPlacesForCrypto == -1 ? wallet.getMaxDecimalPlaces(app) : maxDecimalPlacesForCrypto);
-            currencyFormat.setMinimumFractionDigits(0);
+            currencyFormat.setMinimumFractionDigits(getDefaultFractionDigits);
             String code=currencyCode.toUpperCase();
-            if(code=="BTC")
-                code="BKD";//bitkanda
             return displayCurrencyCode ? String.format("%s %s", currencyFormat.format(amount), code) : currencyFormat.format(amount) ;
         } else {
             try {
@@ -89,8 +88,10 @@ public class CurrencyUtils {
                 decimalFormatSymbols.setCurrencySymbol(symbol);
                 currencyFormat.setDecimalFormatSymbols(decimalFormatSymbols);
                 currencyFormat.setNegativePrefix("-" + symbol);
-                currencyFormat.setMaximumFractionDigits(currency.getDefaultFractionDigits());
-                currencyFormat.setMinimumFractionDigits(currency.getDefaultFractionDigits());
+                currencyFormat.setMaximumFractionDigits(getDefaultFractionDigits);
+                //currencyFormat.setMinimumFractionDigits(getDefaultFractionDigits);
+//                currencyFormat.setMaximumFractionDigits(currency.getDefaultFractionDigits());
+          currencyFormat.setMinimumFractionDigits(currency.getDefaultFractionDigits());
             } catch (IllegalArgumentException e) {
                 Log.e(TAG, "Currency not found for " + currencyCode, e);
                 BRReportsManager.reportBug(new IllegalArgumentException("Illegal currency code: " + currencyCode));

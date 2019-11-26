@@ -305,7 +305,7 @@
     <!-- Caption for graphics -->
     <string name="Import.leftCaption">秘密鍵</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">秘密鍵は通常QRコードとして紙に印刷され、オフラインでの資金保管に使用されています。秘密鍵からの引き出しをすると秘密鍵が管理する資金全額を1回の取引でお使いのBRDに送金します。</string>
+    <string name="Import.message">秘密鍵は通常QRコードとして紙に印刷され、オフラインでの資金保管に使用されています。秘密鍵からの引き出しをすると秘密鍵が管理する資金全額を1回の取引でお使いのBitkandaに送金します。</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">この秘密鍵はパスワードで保護されています。</string>
     <!-- password textfield placeholder -->
@@ -533,9 +533,9 @@
     <!-- Google play review prompt, revivew button -->
     <string name="RateAppPrompt.Button.Dismiss.Android">結構です</string>
     <!-- Google play review prompt, dismiss button -->
-    <string name="RateAppPrompt.Button.RateApp.Android">BRDを評価する</string>
+    <string name="RateAppPrompt.Button.RateApp.Android">Bitkandaを評価する</string>
     <!-- Google play review prompt title -->
-    <string name="RateAppPrompt.Title.Android">BRDを評価する</string>
+    <string name="RateAppPrompt.Title.Android">Bitkandaを評価する</string>
     <!-- Address copied message. -->
     <string name="Receive.copied">クリップボードにコピーされました。</string>
     <!-- Share via email button label -->
@@ -653,7 +653,7 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20〜45分</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">ビットコインネットワークでトランザクションが完了したと表示されているが、BRD上では完了と表示されない場合。</string>
+    <string name="ReScan.body2">ビットコインネットワークでトランザクションが完了したと表示されているが、Bitkanda上では完了と表示されない場合。</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">送金しているが、拒否され続けている場合。</string>
     <!-- Start Sync button label -->

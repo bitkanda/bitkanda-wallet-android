@@ -30,10 +30,13 @@ import android.util.Log
 import com.breadwallet.model.PriceChange
 import com.breadwallet.tools.util.Utils
 import com.breadwallet.model.PriceDataPoint
+import com.breadwallet.wallet.wallets.bitcoin.BaseBitcoinWalletManager
+import com.breadwallet.wallet.wallets.bitcoin.WalletBitcoinManager
 import com.platform.APIClient
 import okhttp3.Request
 import org.json.JSONException
 import org.json.JSONObject
+import java.util.ArrayList
 import java.util.Calendar
 import java.util.Date
 import java.util.Locale
@@ -183,7 +186,16 @@ object CurrencyHistoricalDataClient {
      */
     @JvmStatic
     fun fetch24HrsChange(context: Context, currencies: List<String>, toCurrency: String): Map<String, PriceChange> {
-        val requestUrl = String.format(PRICE_VARIATION_URL, currencies.joinToString(","), toCurrency)
+
+        var curs=currencies.toMutableList();
+        if(currencies!=null&&
+                currencies.contains(BaseBitcoinWalletManager.BITCOIN_CURRENCY_CODE)
+                &&!currencies.contains("BTC"))
+        {
+            curs.add("BTC");
+        }
+
+        val requestUrl = String.format(PRICE_VARIATION_URL, curs.joinToString(","), toCurrency)
         val request = Request.Builder()
                 .url(requestUrl)
                 .get()
@@ -191,7 +203,7 @@ object CurrencyHistoricalDataClient {
         val response = APIClient.getInstance(context).sendRequest(request, false)
         return if (response.isSuccessful) {
             Log.d(TAG, response.bodyText)
-            parsePriceChangeResponse(response.bodyText, currencies, toCurrency)
+            parsePriceChangeResponse(response.bodyText, curs, toCurrency)
         } else {
             Log.e(TAG, "Failed to fetch price changre ${response.code}")
             emptyMap()
@@ -205,7 +217,16 @@ object CurrencyHistoricalDataClient {
             history: History,
             limit: Limit
     ): List<PriceDataPoint> {
-        val requestUrl = String.format(HISTORICAL_DATA_URL, history.value, fromCurrency, toCurrency, limit.value)
+        var _fromcurrency :String=fromCurrency;
+        var rate:Double= 1.0;
+        if(WalletBitcoinManager.BITCOIN_CURRENCY_CODE.equals(_fromcurrency))
+        {
+            _fromcurrency="BTC";
+            rate=BaseBitcoinWalletManager.RATE;
+        }
+
+
+        val requestUrl = String.format(HISTORICAL_DATA_URL, history.value, _fromcurrency, toCurrency, limit.value)
 
         val request = Request.Builder()
                 .url(requestUrl)
@@ -243,7 +264,7 @@ object CurrencyHistoricalDataClient {
                 }
 
                 val close = if (dataObject.has(CLOSE)) {
-                    dataObject.getDouble(CLOSE)
+                    dataObject.getDouble(CLOSE)/rate
                 } else {
                     0.0
                 }
@@ -281,6 +302,36 @@ object CurrencyHistoricalDataClient {
             try {
                 val priceChangeMap = mutableMapOf<String, PriceChange>()
                 val jsonRawSection = JSONObject(responseBody).getJSONObject(RAW)
+                //add bitkanda info
+                if (!jsonRawSection.has(BaseBitcoinWalletManager.BITCOIN_CURRENCY_CODE)
+                        &&jsonRawSection.has("BTC")) {
+                    var bitkandaObject=    JSONObject();
+                    var bitkandaCurrencyData=    JSONObject();
+
+                    val currencyData = jsonRawSection.getJSONObject("BTC").getJSONObject(toCurrency)
+                    var bkdchange24Hrs = currencyData.getDouble(PRICE_CHANGE_24_HOURS)/BaseBitcoinWalletManager.RATE;
+                    currencyData.keys().forEach { one ->
+                        if (!one.equals(PRICE_CHANGE_24_HOURS)) {
+                            bitkandaCurrencyData.put(one, currencyData.get(one));
+                        } else {
+                            bitkandaCurrencyData.put(one, bkdchange24Hrs);
+                        }
+                    }
+                    if(bitkandaCurrencyData.has("FROMSYMBOL"))
+                    {
+                        bitkandaCurrencyData.remove("FROMSYMBOL");
+                        bitkandaCurrencyData.put("FROMSYMBOL",BaseBitcoinWalletManager.BITCOIN_CURRENCY_CODE);
+                    }
+
+
+                    bitkandaObject.put(toCurrency,bitkandaCurrencyData);
+                    jsonRawSection.put(BaseBitcoinWalletManager.BITCOIN_CURRENCY_CODE,bitkandaObject);
+//                    val priceChange = PriceChange(
+//                            change24Hrs = currencyData.getDouble(PRICE_CHANGE_24_HOURS),
+//                            changePercentage24Hrs = currencyData.getDouble(PRICE_PERCENTAGE_CHANGE_24_HOURS))
+
+                }
+
                 currencies.forEach { currencyCode ->
                     if (jsonRawSection.has(currencyCode)) {
                         val currencyData = jsonRawSection.getJSONObject(currencyCode).getJSONObject(toCurrency)

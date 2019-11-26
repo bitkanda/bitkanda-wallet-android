@@ -70,7 +70,7 @@ public class ManageTokenListAdapter extends RecyclerView.Adapter<ManageTokenList
 
             String tokenIconPath = TokenUtil.getTokenIconPath(mContext, currencyCode, true);
             GradientDrawable iconDrawable = (GradientDrawable) holder.iconParent.getBackground();
-
+            Log.d(TAG, "onBindViewHolder() returned: " + tokenIconPath);
             if (!Utils.isNullOrEmpty(tokenIconPath)) {
                 holder.tokenIcon.setVisibility(View.VISIBLE);
                 holder.tokenLetter.setVisibility(View.GONE);

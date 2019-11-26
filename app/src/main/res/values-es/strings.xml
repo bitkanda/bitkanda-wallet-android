@@ -207,7 +207,7 @@
     <!-- Retry Identity verification button -->
     <string name="Crowdsale.retry">Volver a intentar</string>
     <!-- Bitcoin denomination picker label -->
-    <string name="DefaultCurrency.bitcoinLabel">Unidad de visualización Bitcoin</string>
+    <string name="DefaultCurrency.bitcoinLabel">Unidad de visualización Bitkanda</string>
     <!-- Exchange rate label -->
     <string name="DefaultCurrency.rateLabel">Tasa de cambio</string>
     <!-- The wallet is disabled. -->
@@ -305,7 +305,7 @@
     <!-- Caption for graphics -->
     <string name="Import.leftCaption">Clave privada</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">Las claves privadas a menudo se imprimen en papel como códigos QR y se usan para almacenar fondos sin conexión. Canjea una clave privada para transferir todo el dinero que controla a tu monedero BRD con una sola transacción.</string>
+    <string name="Import.message">Las claves privadas a menudo se imprimen en papel como códigos QR y se usan para almacenar fondos sin conexión. Canjea una clave privada para transferir todo el dinero que controla a tu monedero Bitkanda con una sola transacción.</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">Esta clave privada está protegida con una contraseña.</string>
     <!-- password textfield placeholder -->
@@ -533,9 +533,9 @@
     <!-- Google play review prompt, revivew button -->
     <string name="RateAppPrompt.Button.Dismiss.Android">No, gracias.</string>
     <!-- Google play review prompt, dismiss button -->
-    <string name="RateAppPrompt.Button.RateApp.Android">Califique BRD</string>
+    <string name="RateAppPrompt.Button.RateApp.Android">Califique Bitkanda</string>
     <!-- Google play review prompt title -->
-    <string name="RateAppPrompt.Title.Android">Califique BRD</string>
+    <string name="RateAppPrompt.Title.Android">Califique Bitkanda</string>
     <!-- Address copied message. -->
     <string name="Receive.copied">Copiado en el portapapeles.</string>
     <!-- Share via email button label -->
@@ -653,7 +653,7 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 minutos</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">Si una transacción se muestra como completada en la red de bitcoin pero no en BRD.</string>
+    <string name="ReScan.body2">Si una transacción se muestra como completada en la red de Bitkanda pero no en Bitkanda.</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">Obtienes un error repetidamente que dice que tu transacción ha sido rechazada.</string>
     <!-- Start Sync button label -->

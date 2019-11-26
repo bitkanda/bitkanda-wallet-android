@@ -305,7 +305,7 @@
     <!-- Caption for graphics -->
     <string name="Import.leftCaption">Секретный ключ</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">Секретные ключи часто печатаются на бумаге в виде QR-кода и используются для хранения средств в автономном режиме. Восстановите секретный ключ, чтобы перенести все деньги, которые он контролирует, в BRD с помощью одной транзакции.</string>
+    <string name="Import.message">Секретные ключи часто печатаются на бумаге в виде QR-кода и используются для хранения средств в автономном режиме. Восстановите секретный ключ, чтобы перенести все деньги, которые он контролирует, в Bitkanda с помощью одной транзакции.</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">Этот персональный ключ защищен паролем.</string>
     <!-- password textfield placeholder -->
@@ -533,9 +533,9 @@
     <!-- Google play review prompt, revivew button -->
     <string name="RateAppPrompt.Button.Dismiss.Android">Нет, спасибо</string>
     <!-- Google play review prompt, dismiss button -->
-    <string name="RateAppPrompt.Button.RateApp.Android">Оцените BRD</string>
+    <string name="RateAppPrompt.Button.RateApp.Android">Оцените Bitkanda</string>
     <!-- Google play review prompt title -->
-    <string name="RateAppPrompt.Title.Android">Оцените BRD</string>
+    <string name="RateAppPrompt.Title.Android">Оцените Bitkanda</string>
     <!-- Address copied message. -->
     <string name="Receive.copied">Скопировано в буфер обмена.</string>
     <!-- Share via email button label -->
@@ -653,7 +653,7 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 минут</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">Если транзакция описывается как \"выполненная\" в биткойн-сети, но не в вашем BRD-кошельке.</string>
+    <string name="ReScan.body2">Если транзакция описывается как \"выполненная\" в биткойн-сети, но не в вашем Bitkanda-кошельке.</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">Вы несколько раз получили ошибку о том, что транзакция отвергнута.</string>
     <!-- Start Sync button label -->

@@ -626,9 +626,10 @@ public class APIClient {
         }
         final APIClient client = this;
         //sync the kv stores
-        RemoteKVStore remoteKVStore = RemoteKVStore.getInstance(client);
-        ReplicatedKVStore kvStore = ReplicatedKVStore.getInstance(mContext, remoteKVStore);
-        kvStore.syncAllKeys();
+        //bitkanda delete
+//        RemoteKVStore remoteKVStore = RemoteKVStore.getInstance(client);
+//        ReplicatedKVStore kvStore = ReplicatedKVStore.getInstance(mContext, remoteKVStore);
+//        kvStore.syncAllKeys();
     }
 
     //too many requests will call too many BRKeyStore _getData, causing ui elements to freeze

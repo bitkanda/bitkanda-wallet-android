@@ -207,7 +207,7 @@
     <!-- Retry Identity verification button -->
     <string name="Crowdsale.retry">Prøv igen</string>
     <!-- Bitcoin denomination picker label -->
-    <string name="DefaultCurrency.bitcoinLabel">Bitcoin visningsenhed</string>
+    <string name="DefaultCurrency.bitcoinLabel">Bitkanda visningsenhed</string>
     <!-- Exchange rate label -->
     <string name="DefaultCurrency.rateLabel">Valutakurs</string>
     <!-- The wallet is disabled. -->
@@ -305,7 +305,7 @@
     <!-- Caption for graphics -->
     <string name="Import.leftCaption">Privat nøgle</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">Private nøgler printes ofte på papir som en QR-kode og bruges til at opbevare midler offline. Indløs en privat nøgle for at overføre alle pengene den indeholder til din BRD, med en enkelt transaktion.</string>
+    <string name="Import.message">Private nøgler printes ofte på papir som en QR-kode og bruges til at opbevare midler offline. Indløs en privat nøgle for at overføre alle pengene den indeholder til din Bitkanda, med en enkelt transaktion.</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">Denne private nøgle er beskyttet med et kodeord.</string>
     <!-- password textfield placeholder -->
@@ -533,9 +533,9 @@
     <!-- Google play review prompt, revivew button -->
     <string name="RateAppPrompt.Button.Dismiss.Android">Nej tak</string>
     <!-- Google play review prompt, dismiss button -->
-    <string name="RateAppPrompt.Button.RateApp.Android">Bedøm BRD</string>
+    <string name="RateAppPrompt.Button.RateApp.Android">Bedøm Bitkanda</string>
     <!-- Google play review prompt title -->
-    <string name="RateAppPrompt.Title.Android">Bedøm BRD</string>
+    <string name="RateAppPrompt.Title.Android">Bedøm Bitkanda</string>
     <!-- Address copied message. -->
     <string name="Receive.copied">Kopieret til udklipsholder.</string>
     <!-- Share via email button label -->
@@ -653,7 +653,7 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 minutter</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">Hvis en transaktion vises som gennemført i bitcoin netværket, men ikke i dit BRD.</string>
+    <string name="ReScan.body2">Hvis en transaktion vises som gennemført i Bitkanda netværket, men ikke i dit Bitkanda.</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">Du modtager gentagne gange en fejlmeddelelse om at din transaktion er blevet afvist.</string>
     <!-- Start Sync button label -->

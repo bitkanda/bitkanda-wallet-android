@@ -154,9 +154,10 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
                     }
                     overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
                 } else {
-                    Intent intent = new Intent(HomeActivity.this, AddWalletsActivity.class);
-                    startActivity(intent);
-                    overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
+                    //bitkanda delete add wallets
+//                    Intent intent = new Intent(HomeActivity.this, AddWalletsActivity.class);
+//                    startActivity(intent);
+//                    overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
                 }
             }
 

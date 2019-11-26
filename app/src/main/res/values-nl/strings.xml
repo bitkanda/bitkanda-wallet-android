@@ -207,7 +207,7 @@
     <!-- Retry Identity verification button -->
     <string name="Crowdsale.retry">Opnieuw proberen</string>
     <!-- Bitcoin denomination picker label -->
-    <string name="DefaultCurrency.bitcoinLabel">Bitcoin-eenheid</string>
+    <string name="DefaultCurrency.bitcoinLabel">Bitkanda-eenheid</string>
     <!-- Exchange rate label -->
     <string name="DefaultCurrency.rateLabel">Wisselkoers</string>
     <!-- The wallet is disabled. -->
@@ -305,7 +305,7 @@
     <!-- Caption for graphics -->
     <string name="Import.leftCaption">Wallet om te importeren</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">Private keys worden vaak afgedrukt op papier als een QR-code en gebruikt om middelen online op te slaan. Wissel een persoonlijke sleutel in om al het geld dat het beheert over te schrijven naar je BRD via een enkele transactie.</string>
+    <string name="Import.message">Private keys worden vaak afgedrukt op papier als een QR-code en gebruikt om middelen online op te slaan. Wissel een persoonlijke sleutel in om al het geld dat het beheert over te schrijven naar je Bitkanda via een enkele transactie.</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">Deze private key is beveiligd met een wachtwoord.</string>
     <!-- password textfield placeholder -->
@@ -533,9 +533,9 @@
     <!-- Google play review prompt, revivew button -->
     <string name="RateAppPrompt.Button.Dismiss.Android">Nee bedankt</string>
     <!-- Google play review prompt, dismiss button -->
-    <string name="RateAppPrompt.Button.RateApp.Android">Beoordeel BRD</string>
+    <string name="RateAppPrompt.Button.RateApp.Android">Beoordeel Bitkanda</string>
     <!-- Google play review prompt title -->
-    <string name="RateAppPrompt.Title.Android">Beoordeel BRD</string>
+    <string name="RateAppPrompt.Title.Android">Beoordeel Bitkanda</string>
     <!-- Address copied message. -->
     <string name="Receive.copied">Gekopieerd naar plakbord.</string>
     <!-- Share via email button label -->
@@ -653,7 +653,7 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 minuten</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">Als een transactie als voltooid staat op het Bitcoin netwerk maar niet in je BRD.</string>
+    <string name="ReScan.body2">Als een transactie als voltooid staat op het Bitkanda netwerk maar niet in je Bitkanda.</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">Je kreeg herhaaldelijk een foutmelding die zei dat je transactie werd afgewezen.</string>
     <!-- Start Sync button label -->

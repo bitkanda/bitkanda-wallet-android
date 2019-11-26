@@ -123,7 +123,7 @@ public class CryptoUriParser {
         if (Utils.isNullOrEmpty(url)) {
             return false;
         }
-        url="bitkanda:36nvnKZrd4PJuYf2zteJcMzP52r47p7ZSZ";
+        //url="bitkanda:36nvnKZrd4PJuYf2zteJcMzP52r47p7ZSZ";
         //bitcoin:36nvnKZrd4PJuYf2zteJcMzP52r47p7ZSZ
         if (BRCoreKey.isValidBitcoinBIP38Key(url) || BRCoreKey.isValidBitcoinPrivateKey(url)) {
             return true;

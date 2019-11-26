@@ -26,6 +26,7 @@ import com.breadwallet.tools.threads.executor.BRExecutor;
 import com.breadwallet.tools.util.TrustedNode;
 import com.breadwallet.tools.util.Utils;
 import com.breadwallet.wallet.WalletsMaster;
+import com.breadwallet.wallet.wallets.bitcoin.BaseBitcoinWalletManager;
 import com.breadwallet.wallet.wallets.bitcoin.WalletBitcoinManager;
 
 public class NodesActivity extends BRActivity {
@@ -61,7 +62,8 @@ public class NodesActivity extends BRActivity {
         ImageButton faq = findViewById(R.id.faq_button);
         faq.setVisibility(View.GONE);
 
-        BRSharedPrefs.putCurrentWalletCurrencyCode(this, "BTC");
+
+        BRSharedPrefs.putCurrentWalletCurrencyCode(this, BaseBitcoinWalletManager.BITCOIN_CURRENCY_CODE);
 
         nodeStatus = findViewById(R.id.node_status);
         trustNode = findViewById(R.id.node_text);

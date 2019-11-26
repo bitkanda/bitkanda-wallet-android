@@ -17,6 +17,7 @@ import com.breadwallet.tools.util.BRConstants;
 import com.breadwallet.tools.util.Utils;
 import com.breadwallet.wallet.WalletsMaster;
 import com.breadwallet.wallet.abstracts.BaseWalletManager;
+import com.breadwallet.wallet.wallets.bitcoin.BaseBitcoinWalletManager;
 import com.breadwallet.wallet.wallets.bitcoin.WalletBitcoinManager;
 import com.breadwallet.wallet.wallets.ethereum.WalletEthManager;
 import com.platform.APIClient;
@@ -165,10 +166,25 @@ public final class BRApiManager {
                 for (int i = 0; i < length; i++) {
                     CurrencyEntity currencyEntity = new CurrencyEntity();
                     try {
+                        Double rate=1d;
                         JSONObject tmpObj = (JSONObject) arr.get(i);
+                        //String code=tmpObj.getString(CODE).toLowerCase();
+//                        if(code.equalsIgnoreCase("usd")
+//                                ||code.equalsIgnoreCase("cny")
+//                                )
+//
+//                        {
+//                            rate=WalletBitcoinManager.RATE;
+//                        }
+//                        else if( code.equalsIgnoreCase("btc"))
+//                        {
+//                            rate=WalletBitcoinManager.RATE;
+//                        }
+
                         currencyEntity.name = tmpObj.getString(NAME);
                         currencyEntity.code = tmpObj.getString(CODE);
                         currencyEntity.rate = Float.valueOf(tmpObj.getString(RATE));
+                        //currencyEntity.rate = (float)(Double.valueOf(tmpObj.getString(RATE))/rate);
                         currencyEntity.iso = WalletBitcoinManager.BITCOIN_CURRENCY_CODE;
                     } catch (JSONException e) {
                         Log.e(TAG, "updateFiatRates: ", e);
@@ -290,14 +306,23 @@ public final class BRApiManager {
                 Log.e(TAG, "fetchCryptoRates: empty json");
                 return;
             }
+            if(!ratesJsonObject.has(BaseBitcoinWalletManager.BITCOIN_CURRENCY_CODE))
+            {
+                JSONObject jsonobject=new JSONObject();
+                jsonobject.put("BTC",BaseBitcoinWalletManager.CryRate);
+                ratesJsonObject.put(BaseBitcoinWalletManager.BITCOIN_CURRENCY_CODE,jsonobject);
+            }
             Iterator<String> keys = ratesJsonObject.keys();
             Set<CurrencyEntity> ratesList = new LinkedHashSet<>();
             while (keys.hasNext()) {
                 String currencyCode = keys.next();
                 JSONObject jsonObject = ratesJsonObject.getJSONObject(currencyCode);
-                String code = WalletBitcoinManager.BITCOIN_CURRENCY_CODE;
+                //this code must be btc!
+                String code = "BTC";//WalletBitcoinManager.BITCOIN_CURRENCY_CODE;
+                //String code = WalletBitcoinManager.BITCOIN_CURRENCY_CODE;
                 String rate = jsonObject.getString(code);
-                CurrencyEntity currencyEntity = new CurrencyEntity(code, "", Float.valueOf(rate), currencyCode);
+                //CurrencyEntity currencyEntity = new CurrencyEntity(code, "", Float.valueOf(rate), currencyCode);
+                CurrencyEntity currencyEntity = new CurrencyEntity(WalletBitcoinManager.BITCOIN_CURRENCY_CODE, "", Float.valueOf(rate), currencyCode);
                 ratesList.add(currencyEntity);
             }
             RatesRepository.getInstance(context).putCurrencyRates(ratesList);
@@ -334,7 +359,9 @@ public final class BRApiManager {
         String currentcode= WalletBitcoinManager.BITCOIN_CURRENCY_CODE;
         String url = APIClient.getBaseURL() + CURRENCY_QUERY_STRING +currentcode;
         String jsonString = urlGET(app, url);
+
         JSONArray jsonArray = null;
+        ArrayList<Integer> removeArray= new ArrayList<Integer>()  ;
         if (jsonString == null) {
             Log.e(TAG, "fetchFiatRates: failed, response is null");
             return null;
@@ -342,6 +369,46 @@ public final class BRApiManager {
         try {
             JSONObject obj = new JSONObject(jsonString);
             jsonArray = obj.getJSONArray(BRConstants.BODY);
+            if(jsonArray!=null&&jsonArray.length()>0)
+            {
+                JSONObject bkd=null;
+                for(int i=0;i<jsonArray.length();i++)
+                {
+                    JSONObject jsonObject = (JSONObject) jsonArray.get(i);
+                    String code=jsonObject.getString(CODE);
+                    if("eth".equalsIgnoreCase(code)
+                            ||"xrp".equalsIgnoreCase(code)
+                            ||"bch".equalsIgnoreCase(code)
+                            //||"btc".equalsIgnoreCase(code)
+                    )
+                        removeArray.add(i);
+                    //rate convert.
+//                    JSONObject item= new JSONObject();
+//                    item.put(CODE,jsonObject.get(CODE));
+//                    item.put(NAME,jsonObject.get(NAME));
+//                    item.put(RATE, Double.valueOf(jsonObject.getString(RATE))/WalletBitcoinManager.RATE);
+//                    jsonArrayResult.put(item);
+                   String rate= String.format("%.2f", Double.valueOf(jsonObject.getString(RATE))/WalletBitcoinManager.RATE);
+                    jsonObject.put(RATE, rate);
+
+                }
+                for(int i=removeArray.size()-1;i>=0;i--)
+                {
+                    jsonArray.remove(removeArray.get(i) );
+                }
+                //if(bkd!=null)
+                //{
+                    //if( "BTC".equalsIgnoreCase(jsonObject.getString(CODE))) {
+                        bkd = new JSONObject();
+                        bkd.put(CODE, WalletBitcoinManager.BITCOIN_CURRENCY_CODE);
+                        bkd.put(NAME, WalletBitcoinManager.NAME);
+                        bkd.put(RATE, Double.valueOf(1));
+                    //}
+                    //bkd.put(RATE, Float.valueOf(btc.getString(RATE))/WalletBitcoinManager.RATE);
+                    jsonArray.put(bkd);
+                //}
+
+            }
         } catch (JSONException ex) {
             Log.e(TAG, "fetchFiatRates: ", ex);
         }

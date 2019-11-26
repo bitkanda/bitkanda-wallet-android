@@ -305,13 +305,13 @@
     <!-- Caption for graphics -->
     <string name="Import.leftCaption">私钥</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">私钥通常以 QR 码形式打印在纸上，用于离线存储资金。 兑换私钥，用一笔交易将其控制的全部资金转入 BitkandaWallet。</string>
+    <string name="Import.message">私钥通常以 QR 码形式打印在纸上，用于离线存储资金。 兑换私钥，用一笔交易将其控制的全部资金转入比坎达。</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">本私钥受到密码保护。</string>
     <!-- password textfield placeholder -->
     <string name="Import.passwordPlaceholder">密码</string>
     <!-- Caption for graphics -->
-    <string name="Import.rightCaption">您的 BitkandaWallet 钱包</string>
+    <string name="Import.rightCaption">您的 比坎达 钱包</string>
     <!-- Scan Private key button label -->
     <string name="Import.scan">扫描私钥</string>
     <!-- Import wallet success alert title -->
@@ -533,9 +533,9 @@
     <!-- Google play review prompt, revivew button -->
     <string name="RateAppPrompt.Button.Dismiss.Android">不了，谢谢。</string>
     <!-- Google play review prompt, dismiss button -->
-    <string name="RateAppPrompt.Button.RateApp.Android">评价BitkandaWallet</string>
+    <string name="RateAppPrompt.Button.RateApp.Android">评价比坎达</string>
     <!-- Google play review prompt title -->
-    <string name="RateAppPrompt.Title.Android">评价BitkandaWallet</string>
+    <string name="RateAppPrompt.Title.Android">评价比坎达</string>
     <!-- Address copied message. -->
     <string name="Receive.copied">已复制到剪贴板。</string>
     <!-- Share via email button label -->
@@ -653,7 +653,7 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 分钟</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">如果某次交易在比坎达网络上显示为已完成，却不在您的 BitkandaWallet 里。</string>
+    <string name="ReScan.body2">如果某次交易在比坎达网络上显示为已完成，却不在您的比坎达钱包里。</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">你反复得到交易被拒绝的出错信息。</string>
     <!-- Start Sync button label -->
@@ -993,6 +993,12 @@
     <string name="TransactionDetails.blockHeightLabel">已在区块中确认</string>
     <!-- Memo section header -->
     <string name="TransactionDetails.commentsHeader">备忘录</string>
+    <!-- ExchangeRateAtTime section header -->
+    <string name="TransactionDetails.ExchangeRateAtTime">当时汇率</string>
+    <string name="TransactionDetails.ConfirmedInBlock">确认区块</string>
+    <string name="TransactionDetails.TransactionID">交易号</string>
+    <string name="TransactionDetails.WhenSent"> 发送</string>
+    <string name="TransactionDetails.Now"> 现在</string>
     <!-- Memo field placeholder -->
     <string name="TransactionDetails.commentsPlaceholder">添加备忘录...</string>
     <!-- Timestamp section header for complete tx -->
@@ -1166,4 +1172,13 @@
     <string name="WritePaperPhrase.previous">上一步</string>
     <!-- 1 of 3 -->
     <string name="WritePaperPhrase.step">%1$d / %2$d</string>
+
+    <!-- TODO: Alan - these need translation -->
+    <string name="Wallet.one_day">1日</string>
+    <string name="Wallet.one_week">1周</string>
+    <string name="Wallet.one_month">1月</string>
+    <string name="Wallet.three_months">3月</string>
+    <string name="Wallet.one_year">1年</string>
+    <string name="Wallet.three_years">3年</string>
+
 </resources>

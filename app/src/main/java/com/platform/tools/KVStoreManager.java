@@ -279,7 +279,7 @@ public class KVStoreManager {
         byte[] data = getData(context, KEY_CURSOR);
         try {
             if (data == null) {
-                Log.e(TAG, "getLastCursor: data value is null");
+                Log.w(TAG, "getLastCursor: data value is null");
                 return null;
             }
             json = new JSONObject(new String(data));
@@ -446,8 +446,8 @@ public class KVStoreManager {
             //bitkanda showcoin
             //List<TokenListMetaData.TokenInfo> remove = new ArrayList<TokenListMetaData.TokenInfo>();
             for (TokenListMetaData.TokenInfo tokenInfo:enabledCurrencies ) {
-               // if(!("BTC".equalsIgnoreCase(tokenInfo.symbol)||"BKD".equalsIgnoreCase(tokenInfo.symbol)))
-                if(!"BTC".equalsIgnoreCase(tokenInfo.symbol))
+                if(!("BTC".equalsIgnoreCase(tokenInfo.symbol)||"BKD".equalsIgnoreCase(tokenInfo.symbol)))
+               // if(!"BTC".equalsIgnoreCase(tokenInfo.symbol))
                 {
                     //remove.add((tokenInfo));
                     hiddenCurrencies.add((tokenInfo));

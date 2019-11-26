@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tx_amount"
                 android:layout_toEndOf="@+id/amount_when_sent"
-                android:text=" when sent"
+                android:text="@string/TransactionDetails.WhenSent"
                 android:textColor="@color/settings_chevron_right" />
 
             <com.breadwallet.presenter.customviews.BaseTextView
@@ -88,7 +88,7 @@
                 android:layout_below="@id/tx_amount"
                 android:layout_marginStart="2dp"
                 android:layout_toEndOf="@id/amount_now"
-                android:text=" now"
+                android:text="@string/TransactionDetails.Now"
                 android:textColor="@color/settings_chevron_right" />
 
 
@@ -377,7 +377,7 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="14dp"
                         android:layout_marginBottom="14dp"
-                        android:text="Exchange Rate at Time"
+                        android:text="@string/TransactionDetails.ExchangeRateAtTime"
                         android:textColor="@color/settings_chevron_right"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -414,7 +414,7 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="14dp"
                         android:layout_marginBottom="14dp"
-                        android:text="Confirmed in Block"
+                        android:text="@string/TransactionDetails.ConfirmedInBlock"
                         android:textColor="@color/settings_chevron_right"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -453,7 +453,7 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="14dp"
                         android:layout_marginBottom="14dp"
-                        android:text="Transaction ID"
+                        android:text="@string/TransactionDetails.TransactionID"
                         android:textColor="@color/settings_chevron_right"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"

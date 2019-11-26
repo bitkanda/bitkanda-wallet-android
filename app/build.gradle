@@ -93,6 +93,7 @@ android {
         release {
             manifestPlaceholders = [applicationIcon: "@mipmap/ic_launcher"]
             debuggable = false
+            jniDebuggable = false
             minifyEnabled = false
             buildConfigField "boolean", "IS_INTERNAL_BUILD", "false"
         }
@@ -103,8 +104,17 @@ android {
             jniDebuggable = true
             minifyEnabled = false
             buildConfigField "boolean", "IS_INTERNAL_BUILD", "true"
-
+            signingConfig signingConfigs.FakeSigningConfig
         }
+//        debug {
+//            applicationIdSuffix '.debug'
+//            manifestPlaceholders = [applicationIcon: "@mipmap/ic_launcher_grayscale"]
+//            debuggable = true
+//            jniDebuggable = true
+//            minifyEnabled = false
+//            buildConfigField "boolean", "IS_INTERNAL_BUILD", "true"
+//
+//        }
 
     }
     sourceSets {

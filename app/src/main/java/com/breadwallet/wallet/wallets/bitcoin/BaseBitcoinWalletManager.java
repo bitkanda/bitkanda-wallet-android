@@ -76,14 +76,16 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
 
     private static final String TAG = BaseBitcoinWalletManager.class.getSimpleName();
 
-    public static final int ONE_BITCOIN_IN_SATOSHIS = 100000000; // 1 Bitcoin in satoshis, 100 millions
-    private static final long MAXIMUM_AMOUNT = 21000000; // Maximum number of coins available
+    public static final int ONE_BITCOIN_IN_SATOSHIS = 100000000; // 1 Bitkanda in satoshis, 100 millions
+    private static final long MAXIMUM_AMOUNT = 84000000; // Maximum number of coins available
     // TODO Android code shouldn't retry at all, all the retries should be handled by core, temporary fix for CORE-266
     private static final int SYNC_MAX_RETRY = 1;
     private static final int SYNC_RETRY_DELAY_SECONDS = 3;
 
-    public static final String BITCOIN_CURRENCY_CODE = "BTC";//"BTC";
+    public static final String BITCOIN_CURRENCY_CODE = "BKD";//"BTC";
     public static final String BITCASH_CURRENCY_CODE = "BCH";
+    public  static  double RATE=1000.00f;
+    public  static  float CryRate=1;//0.001f;
 
     private WalletSettingsConfiguration mSettingsConfig;
 
@@ -921,10 +923,16 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
             BRExecutor.getInstance().forMainThreadTasks().execute(new Runnable() {
                 @Override
                 public void run() {
-                    String am = CurrencyUtils.getFormattedAmount(ctx, getCurrencyCode(), getCryptoForSmallestCrypto(ctx, new BigDecimal(amount)));
+                    //BaseWalletManager walletManager = WalletsMaster.getInstance().getCurrentWallet(app);
+                    BaseWalletManager walletManager =master.getCurrentWallet(ctx);
+                    String amstr = CurrencyUtils.getFormattedAmount(ctx,
+                            walletManager.getCurrencyCode() ,  new BigDecimal(amount),
+                            walletManager.getUiConfiguration().getMaxDecimalPlacesForUi(), true);
+
+                    //String am = CurrencyUtils.getFormattedAmount(ctx, getCurrencyCode(), getCryptoForSmallestCrypto(ctx, new BigDecimal(amount)));
                     BigDecimal bigAmount = master.getCurrentWallet(ctx).getFiatForSmallestCrypto(ctx, new BigDecimal(amount), null);
                     String amCur = CurrencyUtils.getFormattedAmount(ctx, BRSharedPrefs.getPreferredFiatIso(ctx), bigAmount == null ? BigDecimal.ZERO : bigAmount);
-                    String formatted = String.format("%s (%s)", am, amCur);
+                    String formatted = String.format("%s (%s)", amstr, amCur);
                     final String strToShow = String.format(ctx.getString(R.string.TransactionDetails_received), formatted);
 
                     new Handler().postDelayed(new Runnable() {

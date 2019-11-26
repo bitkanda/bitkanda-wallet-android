@@ -26,6 +26,7 @@
 package com.breadwallet.tools.util;
 
 import android.content.Context;
+import android.telephony.mbms.FileInfo;
 import android.util.Log;
 
 import com.breadwallet.R;
@@ -232,6 +233,7 @@ public final class TokenUtil {
     }
 
     private static void saveTokenListToFile(Context context, String jsonResponse) {
+        Log.i("tokenlist", "tokenlist: " + jsonResponse);
         String filePath = context.getFilesDir().getAbsolutePath() + File.separator + TOKENS_FILENAME;
         try {
             FileWriter fileWriter = new FileWriter(filePath);
@@ -245,7 +247,12 @@ public final class TokenUtil {
 
     private static List<TokenItem> getTokensFromFile(Context context) {
         try {
-            File tokensFile = new File(context.getFilesDir().getPath() + File.separator + TOKENS_FILENAME);
+            String path =context.getFilesDir().getPath() + File.separator + TOKENS_FILENAME;
+            File tokensFile = new File(path);
+            if(!tokensFile.exists())
+            {
+                return new ArrayList<TokenItem>();
+            }
             FileInputStream fileInputStream = new FileInputStream(tokensFile);
             int size = fileInputStream.available();
             byte[] fileBytes = new byte[size];

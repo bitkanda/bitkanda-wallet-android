@@ -305,7 +305,7 @@
     <!-- Caption for graphics -->
     <string name="Import.leftCaption">私密金鑰</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">私密金鑰通常以 QR 碼形式印在紙上，作為離線儲存資金使用。利用單一交易兌換私密金鑰下所控制的所有資金匯入您的 BitkandaWallet。</string>
+    <string name="Import.message">私密金鑰通常以 QR 碼形式印在紙上，作為離線儲存資金使用。利用單一交易兌換私密金鑰下所控制的所有資金匯入您的比坎達。</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">此私密金鑰受密碼保護。</string>
     <!-- password textfield placeholder -->
@@ -533,9 +533,9 @@
     <!-- Google play review prompt, revivew button -->
     <string name="RateAppPrompt.Button.Dismiss.Android">不用了，謝謝</string>
     <!-- Google play review prompt, dismiss button -->
-    <string name="RateAppPrompt.Button.RateApp.Android">評價 BitkandaWallet</string>
+    <string name="RateAppPrompt.Button.RateApp.Android">評價 比坎達</string>
     <!-- Google play review prompt title -->
-    <string name="RateAppPrompt.Title.Android">評價 BitkandaWallet</string>
+    <string name="RateAppPrompt.Title.Android">評價 比坎達</string>
     <!-- Address copied message. -->
     <string name="Receive.copied">已複製至剪貼簿。</string>
     <!-- Share via email button label -->
@@ -653,7 +653,7 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 分鐘</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">如果交易在Bitkanda網上已經顯示為完成，但沒有出現在您的 BitkandaWallet 上。</string>
+    <string name="ReScan.body2">如果交易在比坎達網上已經顯示為完成，但沒有出現在您的比坎達錢包上。</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">你不斷收到「交易被拒」的錯誤。</string>
     <!-- Start Sync button label -->
@@ -993,6 +993,12 @@
     <string name="TransactionDetails.blockHeightLabel">已在區塊確認</string>
     <!-- Memo section header -->
     <string name="TransactionDetails.commentsHeader">備註</string>
+
+    <string name="TransactionDetails.ExchangeRateAtTime">當時匯率</string>
+    <string name="TransactionDetails.ConfirmedInBlock">確認區塊</string>
+    <string name="TransactionDetails.TransactionID">交易號</string>
+    <string name="TransactionDetails.WhenSent"> 發送</string>
+    <string name="TransactionDetails.Now"> 現在</string>
     <!-- Memo field placeholder -->
     <string name="TransactionDetails.commentsPlaceholder">新增備忘錄……</string>
     <!-- Timestamp section header for complete tx -->
@@ -1166,4 +1172,11 @@
     <string name="WritePaperPhrase.previous">上一頁</string>
     <!-- 1 of 3 -->
     <string name="WritePaperPhrase.step">%2$d 之 %1$d</string>
+    <!-- TODO: Alan - these need translation -->
+    <string name="Wallet.one_day">1日</string>
+    <string name="Wallet.one_week">1周</string>
+    <string name="Wallet.one_month">1月</string>
+    <string name="Wallet.three_months">3月</string>
+    <string name="Wallet.one_year">1年</string>
+    <string name="Wallet.three_years">3年</string>
 </resources>

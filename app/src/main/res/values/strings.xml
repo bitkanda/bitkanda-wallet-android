@@ -207,7 +207,7 @@
     <!-- Retry Identity verification button -->
     <string name="Crowdsale.retry">Retry</string>
     <!-- Bitcoin denomination picker label -->
-    <string name="DefaultCurrency.bitcoinLabel">Bitcoin Display Unit</string>
+    <string name="DefaultCurrency.bitcoinLabel">Bitkanda Display Unit</string>
     <!-- Exchange rate label -->
     <string name="DefaultCurrency.rateLabel">Exchange Rate</string>
     <!-- The wallet is disabled. -->
@@ -305,7 +305,7 @@
     <!-- Caption for graphics -->
     <string name="Import.leftCaption">Wallet to be imported</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">Importing a wallet transfers all the money from your other wallet into your BRD wallet using a single transaction.</string>
+    <string name="Import.message">Importing a wallet transfers all the money from your other wallet into your Bitkanda wallet using a single transaction.</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">This private key is password protected.</string>
     <!-- password textfield placeholder -->
@@ -533,9 +533,9 @@
     <!-- Google play review prompt, revivew button -->
     <string name="RateAppPrompt.Button.Dismiss.Android">No Thanks</string>
     <!-- Google play review prompt, dismiss button -->
-    <string name="RateAppPrompt.Button.RateApp.Android">Rate BRD</string>
+    <string name="RateAppPrompt.Button.RateApp.Android">Rate Bitkanda</string>
     <!-- Google play review prompt title -->
-    <string name="RateAppPrompt.Title.Android">Rate BRD</string>
+    <string name="RateAppPrompt.Title.Android">Rate Bitkanda</string>
     <!-- Address copied message. -->
     <string name="Receive.copied">Copied to clipboard.</string>
     <!-- Share via email button label -->
@@ -653,7 +653,7 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 minutes</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">If a transaction shows as completed on the network but not in your BRD.</string>
+    <string name="ReScan.body2">If a transaction shows as completed on the network but not in your Bitkanda.</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">You repeatedly get an error saying your transaction was rejected.</string>
     <!-- Start Sync button label -->
@@ -991,6 +991,13 @@
     <string name="TransactionDetails.amountWhenSent">%1$s when sent, %2$s now</string>
     <!-- Block height label -->
     <string name="TransactionDetails.blockHeightLabel">Confirmed in Block</string>
+
+    <string name="TransactionDetails.ExchangeRateAtTime">Exchange rate at time</string>
+
+    <string name="TransactionDetails.ConfirmedInBlock">Confirmed in Block</string>
+    <string name="TransactionDetails.TransactionID">Transaction ID</string>
+    <string name="TransactionDetails.WhenSent"> When Sent</string>
+    <string name="TransactionDetails.Now"> Now</string>
     <!-- Memo section header -->
     <string name="TransactionDetails.commentsHeader">Memo</string>
     <!-- Memo field placeholder -->

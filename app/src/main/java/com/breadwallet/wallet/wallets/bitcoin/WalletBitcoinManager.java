@@ -54,7 +54,7 @@ public final class WalletBitcoinManager extends BaseBitcoinWalletManager {
 
     private static final String CURRENCY_CODE = BITCOIN_CURRENCY_CODE;
     public static final String NAME = "Bitkanda";//bitkanda "Bitcoin";
-    private static final String SCHEME = "bitcoin";//"bitcoin";
+    private static final String SCHEME = "bitkanda";//"bitcoin";
     private static final String COLOR = "#f29500";
 
     private static WalletBitcoinManager mInstance;
@@ -66,6 +66,7 @@ public final class WalletBitcoinManager extends BaseBitcoinWalletManager {
                 Log.e(TAG, "getInstance: rawPubKey is null");
                 return null;
             }
+
             BRCoreMasterPubKey pubKey = new BRCoreMasterPubKey(rawPubKey, false);
             long time = BRKeyStore.getWalletCreationTime(context);
             mInstance = new WalletBitcoinManager(context, pubKey, BuildConfig.BITCOIN_TESTNET ? BRCoreChainParams.testnetChainParams : BRCoreChainParams.mainnetChainParams, time);

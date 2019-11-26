@@ -207,7 +207,7 @@
     <!-- Retry Identity verification button -->
     <string name="Crowdsale.retry">Riprova</string>
     <!-- Bitcoin denomination picker label -->
-    <string name="DefaultCurrency.bitcoinLabel">Unità di visualizzazione bitcoin</string>
+    <string name="DefaultCurrency.bitcoinLabel">Unità di visualizzazione Bitkanda</string>
     <!-- Exchange rate label -->
     <string name="DefaultCurrency.rateLabel">Tasso di Cambio</string>
     <!-- The wallet is disabled. -->
@@ -305,7 +305,7 @@
     <!-- Caption for graphics -->
     <string name="Import.leftCaption">Portafoglio da importare</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">L\'importazione del portafoglio trasferisce tutti i fondi dal tuo portafoglio al tuo portafoglio BRD utilizzando una singola transizione.</string>
+    <string name="Import.message">L\'importazione del portafoglio trasferisce tutti i fondi dal tuo portafoglio al tuo portafoglio Bitkanda utilizzando una singola transizione.</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">Questa chiave privata è protetta da password.</string>
     <!-- password textfield placeholder -->
@@ -533,9 +533,9 @@
     <!-- Google play review prompt, revivew button -->
     <string name="RateAppPrompt.Button.Dismiss.Android">No Grazie</string>
     <!-- Google play review prompt, dismiss button -->
-    <string name="RateAppPrompt.Button.RateApp.Android">Valutare BRD</string>
+    <string name="RateAppPrompt.Button.RateApp.Android">Valutare Bitkanda</string>
     <!-- Google play review prompt title -->
-    <string name="RateAppPrompt.Title.Android">Valutare BRD</string>
+    <string name="RateAppPrompt.Title.Android">Valutare Bitkanda</string>
     <!-- Address copied message. -->
     <string name="Receive.copied">Copiato negli appunti.</string>
     <!-- Share via email button label -->
@@ -653,7 +653,7 @@
     <!-- extimated time -->
     <string name="ReScan.body1">20-45 minuti</string>
     <!-- Syncing explanation -->
-    <string name="ReScan.body2">Se una transazione figura come completata sulla rete, ma non sul tuo BRD.</string>
+    <string name="ReScan.body2">Se una transazione figura come completata sulla rete, ma non sul tuo Bitkanda.</string>
     <!-- Syncing explanation -->
     <string name="ReScan.body3">Hai ricevuto ripetutamente un errore che dice che la transazione è stata rifiutata.</string>
     <!-- Start Sync button label -->
