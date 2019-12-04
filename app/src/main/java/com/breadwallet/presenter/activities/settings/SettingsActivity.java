@@ -72,7 +72,7 @@ public class SettingsActivity extends BaseSettingsActivity {
             case MODE_CURRENCY_SETTINGS:
                 BaseWalletManager walletManager = WalletsMaster.getInstance().getCurrentWallet(this);
                 settingsItems = walletManager.getSettingsList(this);
-                String currencySettingsLabel = String.format("%s %s", walletManager.getName(), getString(R.string.Settings_title));
+                String currencySettingsLabel = String.format("%s%s", "", getString(R.string.Settings_title));//walletManager.getName()
                 title.setText(currencySettingsLabel);
                 mIsButtonBackArrow = true;
                 break;
