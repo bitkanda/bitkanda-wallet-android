@@ -143,12 +143,12 @@ public final class SettingsUtil {
             UiUtils.showSupportFragment((FragmentActivity) activity, null, walletManager);
         }, false, R.drawable.ic_support));
 
-        settingsItems.add(new BRSettingsItem(activity.getString(R.string.Settings_review), "", new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AppReviewPromptManager.INSTANCE.openGooglePlay(activity);
-            }
-        }, false, R.drawable.ic_review));
+//        settingsItems.add(new BRSettingsItem(activity.getString(R.string.Settings_review), "", new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                AppReviewPromptManager.INSTANCE.openGooglePlay(activity);
+//            }
+//        }, false, R.drawable.ic_review));
 //        settingsItems.add(new BRSettingsItem(activity.getString(R.string.Settings_rewards), "", new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -199,9 +199,9 @@ public final class SettingsUtil {
                 activity.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
             }
         }, false, 0));
-
+//walletBitcoinManager.getName()
         final WalletBitcoinManager walletBitcoinManager = WalletBitcoinManager.getInstance(activity);
-        String bitcoinSettingsLabel = String.format("%s %s", walletBitcoinManager.getName(), activity.getString(R.string.Settings_title));
+        String bitcoinSettingsLabel = String.format("%s%s", "", activity.getString(R.string.Settings_title));
         items.add(new BRSettingsItem(bitcoinSettingsLabel, null, view -> {
             BRSharedPrefs.putCurrentWalletCurrencyCode(activity, walletBitcoinManager.getCurrencyCode());
             startCurrencySettings(activity);
@@ -214,14 +214,14 @@ public final class SettingsUtil {
 //            startCurrencySettings(activity);
 //        }, false, 0));
         //bitkanda
-        items.add(new BRSettingsItem(activity.getString(R.string.Prompts_ShareData_title), null, view -> {
-            Intent intent = new Intent(activity, ShareDataActivity.class);
-            activity.startActivity(intent);
-            activity.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
-        }, false, 0));
-        items.add(new BRSettingsItem(activity.getString(R.string.Settings_notifications), null, view -> {
-            NotificationsSettingsActivity.Companion.start(activity);
-        }, false, 0));
+//        items.add(new BRSettingsItem(activity.getString(R.string.Prompts_ShareData_title), null, view -> {
+//            Intent intent = new Intent(activity, ShareDataActivity.class);
+//            activity.startActivity(intent);
+//            activity.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
+//        }, false, 0));
+//        items.add(new BRSettingsItem(activity.getString(R.string.Settings_notifications), null, view -> {
+//            NotificationsSettingsActivity.Companion.start(activity);
+//        }, false, 0));
         return items;
     }
 
