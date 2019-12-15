@@ -385,7 +385,7 @@
     <!-- button label -->
     <string name="MenuViewController.recoverButton">恢复钱包</string>
     <!-- Paper Key Skip modal body (Android-version) -->
-    <string name="Modal.PaperKeySkip.Body.Android">更改手机安全设置后,打开钱包需要输入纸钥。\n\n您希望稍后再设置纸钥吗？</string>
+    <string name="Modal.PaperKeySkip.Body.Android">更改手机安全设置后,打开钱包需要输入还原码。\n\n您希望稍后再设置还原码吗？</string>
     <!-- Paper Key Skip modal Continue Set Up button -->
     <string name="Modal.PaperKeySkip.Button.ContinueSetUp">继续设置</string>
     <!-- Paper Key Skip modal I'll do it later button -->
@@ -485,9 +485,9 @@
     <!-- Warning about recovery key (formerly paper key). -->
     <string name="Prompts.PaperKey.body">为了应对手机丢失或者更换， 请您务必写下你的还原码。</string>
     <!-- Warning about paper key (Android-version) -->
-    <string name="Prompts.PaperKey.Body.Android">设置纸钥,避免手机丢失或更换带来的不便。您需要提供密钥以更改手机安全设置。</string>
+    <string name="Prompts.PaperKey.Body.Android">设置还原码,避免手机丢失或更换带来的不便。您需要提供密钥以更改手机安全设置。</string>
     <!-- An action is required (You must do this action). -->
-    <string name="Prompts.PaperKey.title">需要采取的行动</string>
+    <string name="Prompts.PaperKey.title">需要执行的操作</string>
     <!-- Transaction rejected prompt body -->
     <string name="Prompts.RecommendRescan.body">您的钱包可能不同步。通常可通过重新扫描区块链来修复。</string>
     <!-- Transaction rejected prompt title -->
