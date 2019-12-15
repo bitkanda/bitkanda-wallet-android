@@ -139,9 +139,9 @@ public final class SettingsUtil {
             activity.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
         }, false, R.drawable.ic_security_settings));
 
-        settingsItems.add(new BRSettingsItem(activity.getString(R.string.MenuButton_support), "", view -> {
-            UiUtils.showSupportFragment((FragmentActivity) activity, null, walletManager);
-        }, false, R.drawable.ic_support));
+//        settingsItems.add(new BRSettingsItem(activity.getString(R.string.MenuButton_support), "", view -> {
+//            UiUtils.showSupportFragment((FragmentActivity) activity, null, walletManager);
+//        }, false, R.drawable.ic_support));
 
 //        settingsItems.add(new BRSettingsItem(activity.getString(R.string.Settings_review), "", new View.OnClickListener() {
 //            @Override

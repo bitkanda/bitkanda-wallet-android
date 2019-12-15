@@ -354,14 +354,14 @@ public final class BRApiManager {
     }
 
     @WorkerThread
-    private static JSONArray fetchFiatRates(Context app) {
+    private static JSONArray fetchFiatRates(Context app) throws JSONException {
         //Fetch the BTC-Fiat rates
         String currentcode= WalletBitcoinManager.BITCOIN_CURRENCY_CODE;
         String url = APIClient.getBaseURL() + CURRENCY_QUERY_STRING +currentcode;
         String jsonString = urlGET(app, url);
 
         JSONArray jsonArray = null;
-        ArrayList<Integer> removeArray= new ArrayList<Integer>()  ;
+
         if (jsonString == null) {
             Log.e(TAG, "fetchFiatRates: failed, response is null");
             return null;
@@ -369,50 +369,46 @@ public final class BRApiManager {
         try {
             JSONObject obj = new JSONObject(jsonString);
             jsonArray = obj.getJSONArray(BRConstants.BODY);
-            if(jsonArray!=null&&jsonArray.length()>0)
-            {
-                JSONObject bkd=null;
-                for(int i=0;i<jsonArray.length();i++)
-                {
-                    JSONObject jsonObject = (JSONObject) jsonArray.get(i);
-                    String code=jsonObject.getString(CODE);
-                    if("eth".equalsIgnoreCase(code)
-                            ||"xrp".equalsIgnoreCase(code)
-                            ||"bch".equalsIgnoreCase(code)
-                            //||"btc".equalsIgnoreCase(code)
-                    )
-                        removeArray.add(i);
-                    //rate convert.
-//                    JSONObject item= new JSONObject();
-//                    item.put(CODE,jsonObject.get(CODE));
-//                    item.put(NAME,jsonObject.get(NAME));
-//                    item.put(RATE, Double.valueOf(jsonObject.getString(RATE))/WalletBitcoinManager.RATE);
-//                    jsonArrayResult.put(item);
-                   String rate= String.format("%.2f", Double.valueOf(jsonObject.getString(RATE))/WalletBitcoinManager.RATE);
-                    jsonObject.put(RATE, rate);
 
-                }
-                for(int i=removeArray.size()-1;i>=0;i--)
-                {
-                    jsonArray.remove(removeArray.get(i) );
-                }
-                //if(bkd!=null)
-                //{
-                    //if( "BTC".equalsIgnoreCase(jsonObject.getString(CODE))) {
-                        bkd = new JSONObject();
-                        bkd.put(CODE, WalletBitcoinManager.BITCOIN_CURRENCY_CODE);
-                        bkd.put(NAME, WalletBitcoinManager.NAME);
-                        bkd.put(RATE, Double.valueOf(1));
-                    //}
-                    //bkd.put(RATE, Float.valueOf(btc.getString(RATE))/WalletBitcoinManager.RATE);
-                    jsonArray.put(bkd);
-                //}
-
-            }
         } catch (JSONException ex) {
             Log.e(TAG, "fetchFiatRates: ", ex);
         }
-        return jsonArray == null ? backupFetchRates(app) : jsonArray;
+        JSONArray result= (jsonArray == null ? backupFetchRates(app) : jsonArray);
+        return FormatRate(result);
+    }
+
+    private static JSONArray FormatRate(JSONArray ja ) throws JSONException {
+        ArrayList<Integer> removeArray= new ArrayList<Integer>()  ;
+        if(ja!=null&&ja.length()>0) {
+            JSONObject bkd = null;
+            for (int i = 0; i < ja.length(); i++) {
+                JSONObject jsonObject = (JSONObject) ja.get(i);
+                String code = jsonObject.getString(CODE);
+                if ("eth".equalsIgnoreCase(code)
+                        || "xrp".equalsIgnoreCase(code)
+                        || "bch".equalsIgnoreCase(code)
+                        || "btc".equalsIgnoreCase(code)
+                )
+                    removeArray.add(i);
+                String rate = String.format("%.2f", Double.valueOf(jsonObject.getString(RATE)) / WalletBitcoinManager.RATE);
+                jsonObject.put(RATE, rate);
+
+            }
+            for (int i = removeArray.size() - 1; i >= 0; i--) {
+                ja.remove(removeArray.get(i));
+            }
+
+            bkd = new JSONObject();
+            bkd.put(CODE, WalletBitcoinManager.BITCOIN_CURRENCY_CODE);
+            bkd.put(NAME, WalletBitcoinManager.NAME);
+            bkd.put(RATE, Double.valueOf(1));
+
+            ja.put(bkd);
+
+
+        }
+
+            return  ja;
     }
 
     /**

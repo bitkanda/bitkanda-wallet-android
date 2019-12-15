@@ -263,7 +263,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="brd.com"
+                    android:host="bitkanda.org"
                     android:pathPrefix="/scanqr"
                     android:scheme="https" />
 
@@ -275,7 +275,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="brd.com"
+                    android:host="bitkanda.org"
                     android:pathPrefix="/x/platform"
                     android:scheme="https" />
 
@@ -287,7 +287,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="brd.com"
+                    android:host="bitkanda.org"
                     android:pathPrefix="/x/link-wallet"
                     android:scheme="https" />
 
@@ -299,7 +299,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="brd.com"
+                    android:host="bitkanda.org"
                     android:pathPrefix="/x/debug"
                     android:scheme="https" />
 

@@ -57,6 +57,7 @@
         android:background="?attr/faq_button_primary_color"
         app:layout_constraintBottom_toBottomOf="@+id/title"
         app:layout_constraintRight_toRightOf="parent"
+        android:visibility="invisible"
         app:layout_constraintTop_toTopOf="@+id/title" />
 
     <com.breadwallet.presenter.customviews.PinLayout
