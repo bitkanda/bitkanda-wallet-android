@@ -38,5 +38,6 @@ Simplicity is bitkanda wallet's core design principle. A simple backup phrase is
 7  If present, remove app/src/main/jni and remove app/src/main/secp
 8. Initialize the submodules - <code>git submodule init</code>
 9. Update the submodules - <code>git submodule update --recursive</code>
-10.Go to the directory  /core/Java/Core/src/main/cpp  and extract openssl's lib.tar.xz file to the current directory. 
+10.Go to the directory  /core/Java/Core/src/main/cpp  
+and extract openssl's lib.tar.xz file to the current directory. 
 11. Build -> Rebuild Project
