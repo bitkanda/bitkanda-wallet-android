@@ -55,7 +55,7 @@ public class BRSQLiteHelper extends SQLiteOpenHelper {
         return instance;
     }
 
-    public static final String DATABASE_NAME = "breadwallet.db";
+    public static final String DATABASE_NAME = "bitkandawallet.db";
     private static final int DATABASE_VERSION = 15;
 
     /**
@@ -126,7 +126,7 @@ public class BRSQLiteHelper extends SQLiteOpenHelper {
             CURRENCY_CODE + " text," +
             CURRENCY_NAME + " text," +
             CURRENCY_RATE + " integer," +
-            CURRENCY_ISO + " text DEFAULT 'BTC', " +
+            CURRENCY_ISO + " text DEFAULT 'BKD', " +
             "PRIMARY KEY (" + CURRENCY_CODE + ", " + CURRENCY_ISO + ")" +
             ");";
 
