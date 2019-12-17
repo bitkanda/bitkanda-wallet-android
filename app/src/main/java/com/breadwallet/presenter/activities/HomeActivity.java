@@ -28,6 +28,7 @@ package com.breadwallet.presenter.activities;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -45,6 +46,8 @@ import com.breadwallet.presenter.activities.settings.SettingsActivity;
 import com.breadwallet.presenter.activities.util.BRActivity;
 import com.breadwallet.presenter.customviews.BRNotificationBar;
 import com.breadwallet.presenter.customviews.BaseTextView;
+import com.breadwallet.presenter.entities.CryptoRequest;
+import com.breadwallet.presenter.fragments.FragmentSend;
 import com.breadwallet.presenter.viewmodels.HomeViewModel;
 import com.breadwallet.repository.ExperimentsRepositoryImpl;
 import com.breadwallet.tools.adapter.WalletListAdapter;
@@ -110,11 +113,13 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
 
         boolean showBuyAndSell = BRConstants.USD.equals(BRSharedPrefs.getPreferredFiatIso(this)) &&
                 ExperimentsRepositoryImpl.INSTANCE.isExperimentActive(Experiments.BUY_SELL_MENU_BUTTON);
-        mBuyMenuLabel.setText(showBuyAndSell ? R.string.HomeScreen_buyAndSell : R.string.HomeScreen_buy);
+        //mBuyMenuLabel.setText(showBuyAndSell ? R.string.HomeScreen_buyAndSell : R.string.HomeScreen_buy);
         Map<String, String> eventAttributes = new HashMap<>();
         eventAttributes.put(EventUtils.EVENT_ATTRIBUTE_SHOW, Boolean.toString(showBuyAndSell));
         EventUtils.pushEvent(EventUtils.EVENT_EXPERIMENT_BUY_SELL_MENU_BUTTON, eventAttributes);
-        mBuyLayout.setOnClickListener(view -> {
+        //buy button bitkanda
+        mTradeLayout.setOnClickListener(view -> showSendFragment(null));
+       // mBuyLayout.setOnClickListener(view -> {
             //bitkanda
 //            Map<String, String> clickAttributes = new HashMap<>();
 //            eventAttributes.put(EventUtils.EVENT_ATTRIBUTE_BUY_AND_SELL, Boolean.toString(showBuyAndSell));
@@ -123,8 +128,9 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
 //                    HTTPServer.getPlatformUrl(HTTPServer.URL_BUY),
 //                    WalletBitcoinManager.getInstance(HomeActivity.this).getCurrencyCode());
 //            UiUtils.startPlatformBrowser(HomeActivity.this, url);
-        });
-        mTradeLayout.setOnClickListener(view -> UiUtils.startPlatformBrowser(HomeActivity.this, HTTPServer.getPlatformUrl(HTTPServer.URL_TRADE)));
+       // });
+        mBuyLayout.setOnClickListener(view -> UiUtils.showReceiveFragment(HomeActivity.this, true));
+        //mTradeLayout.setOnClickListener(view -> UiUtils.startPlatformBrowser(HomeActivity.this, HTTPServer.getPlatformUrl(HTTPServer.URL_TRADE)));
         mMenuLayout.setOnClickListener(view -> {
             Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
             intent.putExtra(SettingsActivity.EXTRA_MODE, SettingsActivity.MODE_SETTINGS);
@@ -200,7 +206,32 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         super.onNewIntent(intent);
         processIntentData(intent);
     }
+    //send
+    public void showSendFragment(final CryptoRequest request) {
+        // TODO: Find a better solution.
+        if (FragmentSend.isIsSendShown()) {
+            return;
+        }
+        FragmentSend.setIsSendShown(true);
+        new Handler().postDelayed(() -> {
+            FragmentSend fragmentSend = (FragmentSend) getSupportFragmentManager()
+                    .findFragmentByTag(FragmentSend.class.getName());
+            if (fragmentSend == null) {
+                fragmentSend = new FragmentSend();
+            }
 
+            Bundle arguments = new Bundle();
+            arguments.putSerializable(WalletActivity.EXTRA_CRYPTO_REQUEST, request);
+            fragmentSend.setArguments(arguments);
+            if (!fragmentSend.isAdded()) {
+                getSupportFragmentManager().beginTransaction()
+                        .setCustomAnimations(0, 0, 0, R.animator.plain_300)
+                        .add(android.R.id.content, fragmentSend, FragmentSend.class.getName())
+                        .addToBackStack(FragmentSend.class.getName()).commit();
+            }
+        }, WalletActivity.SEND_SHOW_DELAY);
+
+    }
     private synchronized void processIntentData(Intent intent) {
         if (intent.hasExtra(EXTRA_PUSH_NOTIFICATION_CAMPAIGN_ID)) {
             Map<String, String> attributes = new HashMap<>();

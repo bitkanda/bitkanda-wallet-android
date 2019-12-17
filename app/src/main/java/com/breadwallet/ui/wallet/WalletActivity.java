@@ -87,7 +87,7 @@ public class WalletActivity extends BRActivity implements InternetManager.Connec
     private static final String MARKET_CHART_DATE_WITH_HOUR = "MMM d, h:mm";
     private static final String MARKET_CHART_DATE_WITH_YEAR = "MMM d, YYYY";
     private static final float SYNC_PROGRESS_LAYOUT_ANIMATION_ALPHA = 0.0f;
-    private static final int SEND_SHOW_DELAY = 300;
+    public static final int SEND_SHOW_DELAY = 300;
     private static final boolean RUN_LOGGER = false;
     private static final int MARKET_CHART_ANIMATION_DURATION = 500;
     private static final float MARKET_CHART_ANIMATION_ACCELERATION = 1.2f;

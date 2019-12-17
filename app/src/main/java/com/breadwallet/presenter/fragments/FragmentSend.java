@@ -235,6 +235,7 @@ public class FragmentSend extends ModalDialogFragment implements BRKeyboard.OnIn
                 startEditingAmount();
             }
         });
+        mAmountEdit.setHint("0");
 
         //needed to fix the overlap bug
         mCommentEdit.setOnKeyListener(new View.OnKeyListener() {
