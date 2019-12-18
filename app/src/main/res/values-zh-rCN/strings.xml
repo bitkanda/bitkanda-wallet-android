@@ -299,13 +299,13 @@
     <!-- Import signing error message -->
     <string name="Import.Error.signing">错误签名交易</string>
     <!-- [Redeem] the funds stored on this private key. -->
-    <string name="Import.importButton">兑换</string>
+    <string name="Import.importButton">导入</string>
     <!-- Importing wallet progress view label -->
-    <string name="Import.importing">正在兑换私钥</string>
+    <string name="Import.importing">正在导入私钥</string>
     <!-- Caption for graphics -->
     <string name="Import.leftCaption">私钥</string>
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">私钥通常以 QR 码形式打印在纸上，用于离线存储资金。 兑换私钥，用一笔交易将其控制的全部资金转入比坎达。</string>
+    <string name="Import.message">私钥通常以二维码形式打印在纸上，用于离线存储资金。 导入私钥，用一笔交易将其控制的全部资金转入比坎达。</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">本私钥受到密码保护。</string>
     <!-- password textfield placeholder -->
@@ -317,13 +317,13 @@
     <!-- Import wallet success alert title -->
     <string name="Import.success">成功</string>
     <!-- Successfully imported wallet message body -->
-    <string name="Import.SuccessBody">成功兑换私钥。</string>
+    <string name="Import.SuccessBody">成功导入私钥。</string>
     <!-- Import Wallet screen title -->
-    <string name="Import.title">兑换私钥</string>
+    <string name="Import.title">导入私钥</string>
     <!-- Unlocking Private key activity view message. -->
     <string name="Import.unlockingActivity">解锁键</string>
     <!-- Import wallet intro warning message -->
-    <string name="Import.warning">兑换私钥不需要输入交易历史或其他细节。</string>
+    <string name="Import.warning">导入私钥不需要输入交易历史或其他细节。</string>
     <!-- Wrong password alert message -->
     <string name="Import.wrongPassword">密码错误，请重试。</string>
     <!-- Close app button -->
@@ -814,7 +814,7 @@
     <!-- Face ID spending limit label -->
     <string name="Settings.faceIdLimit">面部识别支出限额</string>
     <!-- Redeem the funds stored on this private key. -->
-    <string name="Settings.importTitle">兑换私钥</string>
+    <string name="Settings.importTitle">导入私钥</string>
     <!-- Manage settings section header -->
     <string name="Settings.manage">管理</string>
     <!-- Notifications label -->
