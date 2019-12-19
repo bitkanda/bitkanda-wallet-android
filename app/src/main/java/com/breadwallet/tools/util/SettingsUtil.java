@@ -372,17 +372,18 @@ public final class SettingsUtil {
                 }
             }, false, 0));
         }
-        items.add(new BRSettingsItem(context.getString(R.string.Settings_importTitle), "", new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!UiUtils.isClickAllowed()) return;
-                Activity currentActivity = (Activity) view.getContext();
-                Intent intent = new Intent(currentActivity, ImportActivity.class);
-                currentActivity.startActivity(intent);
-                currentActivity.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
-            }
-        }, false, 0));
-
+        if (BuildConfig.DEBUG) {
+            items.add(new BRSettingsItem(context.getString(R.string.Settings_importTitle), "", new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (!UiUtils.isClickAllowed()) return;
+                    Activity currentActivity = (Activity) view.getContext();
+                    Intent intent = new Intent(currentActivity, ImportActivity.class);
+                    currentActivity.startActivity(intent);
+                    currentActivity.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
+                }
+            }, false, 0));
+        }
         items.add(new BRSettingsItem(context.getString(R.string.ReScan_header), "", new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -428,16 +429,18 @@ public final class SettingsUtil {
 
     public static List<BRSettingsItem> getBitcoinCashSettings(final Context context) {
         List<BRSettingsItem> items = new ArrayList<>();
-        items.add(new BRSettingsItem(context.getString(R.string.Settings_importTitle), "", new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!UiUtils.isClickAllowed()) return;
-                Activity currentActivity = (Activity) v.getContext();
-                Intent intent = new Intent(currentActivity, ImportActivity.class);
-                currentActivity.startActivity(intent);
-                currentActivity.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
-            }
-        }, false, 0));
+        if (BuildConfig.DEBUG) {
+            items.add(new BRSettingsItem(context.getString(R.string.Settings_importTitle), "", new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (!UiUtils.isClickAllowed()) return;
+                    Activity currentActivity = (Activity) v.getContext();
+                    Intent intent = new Intent(currentActivity, ImportActivity.class);
+                    currentActivity.startActivity(intent);
+                    currentActivity.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
+                }
+            }, false, 0));
+        }
 
         items.add(new BRSettingsItem(context.getString(R.string.ReScan_header), "", new View.OnClickListener() {
             @Override
